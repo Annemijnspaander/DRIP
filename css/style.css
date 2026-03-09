@@ -191,7 +191,7 @@ footer{
         font-size:70px;
     }
 }
-
+s
 .overlay-bg{
     position: fixed;
     inset: 0;
@@ -205,4 +205,27 @@ footer{
 .overlay-bg.active{
     opacity: 1;
     visibility: visible;
+}
+
+#overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+    opacity:0;
+    pointer-events:none;
+    transition: opacity 0.3s ease;
+    z-index:1000;
+}
+
+#overlay.active{
+    opacity:1;
+    pointer-events:auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }

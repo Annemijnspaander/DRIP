@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delta Risk Impact Platform</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" href="img/HWUD01_logo_donker_omleind.png">
     
     <link rel="stylesheet" href="https://use.typekit.net/jfy6anf.css">
@@ -12,6 +12,7 @@
 <body>
 
 <header>
+    <div id="overlay"></div>
     <div class="nav">
         <div class="logo">
             <img src="img/HWUD01_Logo.png" alt="DRIP logo">
@@ -21,20 +22,20 @@
 
     <nav class="menu" id="menu">
     <ul>
-        <li>Home</li>
-        <li>Over DRIP</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./html/overdrip.html">Over DRIP</a></li>
         <li>
             Thema's
             <ul>
-                <li><a href="geschiedenis.html">Geschiedenis van de deltas</a></li>
-                <li><a href="samenwerking.html">Internationale samenwerking</a></li>
-                <li><a href="ruimte.html">Ruimte voor de rivier</a></li>
-                <li><a href="watergebruik.html">Watergebruik en landbouw</a></li>
-                <li><a href="klimaatverandering.html">Klimaatverandering</a></li>
-                <li><a href="governance-en-beleid.html">Governance en beleid</a></li>
+                <li><a href="./html/geschiedenis.html">Geschiedenis van de deltas</a></li>
+                <li><a href="./html/samenwerking.html">Internationale samenwerking</a></li>
+                <li><a href="./html/ruimte.html">Ruimte voor de rivier</a></li>
+                <li><a href="./html/watergebruik.html">Watergebruik en landbouw</a></li>
+                <li><a href="./html/klimaatverandering.html">Klimaatverandering</a></li>
+                <li><a href="./html/governance.html">Governance en beleid</a></li>
             </ul>
         </li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="./html/contact.html">Contact</a></li>
     </ul>
 </nav>
 </header>
@@ -107,12 +108,29 @@
 
     <div class="theme-grid">
 
-        <div class="theme-box">Historische ontwikkelingen</div>
-        <div class="theme-box">Veiligheidsmaatregelen</div>
-        <div class="theme-box">Geopolitieke spanningen</div>
-        <div class="theme-box">Watergebruik en landbouw</div>
-        <div class="theme-box">Klimaatverandering</div>
-        <div class="theme-box">Governance en beleid</div>
+        <a href="./html/geschiedenis.html">
+    <div class="theme-box">Geschiedenis van de deltas</div>
+</a>
+
+<a href="./html/samenwerking.html">
+    <div class="theme-box">Internationale samenwerking</div>
+</a>
+
+<a href="./html/ruimte.html">
+    <div class="theme-box">Ruimte voor de rivier</div>
+</a>
+
+<a href="./html/watergebruik.html">
+    <div class="theme-box">Watergebruik en landbouw</div>
+</a>
+
+<a href="./html/klimaatverandering.html">
+    <div class="theme-box">Klimaatverandering</div>
+</a>
+
+<a href="./html/governance.html">
+    <div class="theme-box">Governance en beleid</div>
+</a>
 
     </div>
 
@@ -122,6 +140,6 @@
     © 2026 DRIP
 </footer>
 
-<script src="script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
