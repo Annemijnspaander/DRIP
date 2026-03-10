@@ -1,6 +1,6 @@
 :root{
     --blue: #0E1F5A;
-    --beige: #E6DED2;
+    --light: #e4ecf8;
 }
 
 body{
@@ -8,7 +8,7 @@ body{
     font-family: "ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
-    background: var(--beige);
+    background: var(--light);
     color: var(--blue);
 }
 
@@ -89,12 +89,12 @@ header{
 }
 
 .hero-overlay h1{
-    font-size:120px;
+    font-size:200px;
     margin:0;
 }
 
 .hero-overlay p{
-    font-size:18px;
+    font-size:25px;
     line-height:1.6;
 }
 
@@ -150,7 +150,7 @@ header{
 }
 
 .theme-box{
-    background:white;
+    background:#e4ecf8;
     border:4px solid var(--blue);
     border-radius:25px;
     padding:40px;
