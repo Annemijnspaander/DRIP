@@ -272,7 +272,6 @@ a{
 }
   :root {
             --bg: #f6f8fb;
-            --ink: #143042;
             --muted: #59707f;
             --line: #d7e1e8;
             --card: #ffffff;
@@ -286,14 +285,7 @@ a{
         body {
             margin: 0;
             background: var(--bg);
-            color: var(--ink);
             font-family: "proxima-nova", Arial, sans-serif;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, rgba(20,48,66,.92), rgba(31,111,178,.82));
-            color: white;
-            padding: 5rem 1.5rem 3.5rem;
         }
 
         .hero-content {
@@ -312,7 +304,7 @@ a{
             margin: 0;
             font-size: 1.08rem;
             line-height: 1.7;
-            color: rgba(255,255,255,.92);
+            color: var(--ink);
         }
 
         .page-wrap {
@@ -614,4 +606,88 @@ a{
 
 .apa-list li{
     margin-bottom:0.8rem;
+}
+
+/* Wrapper begrenst hoe ver de sticky hero zichtbaar blijft */
+.hero-wrapper {
+    position: relative;
+    height: 200vh; /* 100vh voor de hero zelf + 100vh scrollruimte voor de vlakken */
+}
+
+.hero {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    height: 100vh;
+}
+
+.delta-intro {
+    position: relative;
+    z-index: 10;
+    margin-top: -100vh;
+    padding-top: 100vh;
+}
+
+.delta-intro-inner {
+    display: flex;
+}
+
+.delta-vlak {
+    flex: 1;
+    padding: 32px 28px 36px;
+    background: rgba(14, 31, 90, 0.55);
+    backdrop-filter: blur(2px);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.delta-vlak:last-child {
+    border-right: none;
+}
+
+.delta-vlak:nth-child(2) { transition-delay: 0.15s; }
+.delta-vlak:nth-child(3) { transition-delay: 0.30s; }
+
+.delta-vlak.zichtbaar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delta-luchtfoto {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.delta-vlak h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.delta-vlak p {
+    font-size: 14px;
+    line-height: 1.65;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.88);
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .delta-intro-inner {
+        flex-direction: column;
+    }
+    .delta-vlak {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
 }
