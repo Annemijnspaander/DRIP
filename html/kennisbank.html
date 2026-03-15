@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kennisbank</title>
+    <title>Kennisbank – DRIP</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/png" href="img/HWUD01_logo_donker_omleind.png">
+    <link rel="stylesheet" href="../css/kennisbank.css">
+    <link rel="icon" type="image/png" href="../img/HWUD01_logo_donker_omleind.png">
     <link rel="stylesheet" href="https://use.typekit.net/jfy6anf.css">
 </head>
 <body>
@@ -14,70 +15,185 @@
     <div id="overlay"></div>
     <div class="nav">
         <div class="logo">
-            <img src="img/HWUD01_Logo.png" alt="DRIP logo">
+            <a href="../index.html">
+                <img src="../img/HWUD01_Logo.png" alt="DRIP logo">
+            </a>
         </div>
         <div class="burger" id="burger">☰</div>
     </div>
 
     <nav class="menu" id="menu">
-   <nav class="menu" id="menu">
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="overdrip.html">Over DRIP</a></li>
-        <li>
-            Thema's
-            <ul>
-                <li><a href="historie.html">Historische gebeurtenissen</a></li>
-                <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
-                <li><a href="projecten.html">Huidige projecten</a></li>
-                <li><a href="watergebruik.html">Watergebruik en governance</a></li>
-                <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
-                <li><a href="kennisbank.html">Kennisbank</a></li>
-            </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="overdrip.html">Over DRIP</a></li>
+            <li>
+                Thema's
+                <ul>
+                    <li><a href="historie.html">Historische gebeurtenissen</a></li>
+                    <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
+                    <li><a href="projecten.html">Huidige projecten</a></li>
+                    <li><a href="watergebruik.html">Watergebruik en governance</a></li>
+                    <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
+                    <li><a href="kennisbank.html">Kennisbank</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Thema Titel</h1>
-            <p>Introductie over het thema</p>
+<main class="kennisbank-main">
+
+    <h1 class="kennisbank-titel">Kennisbank</h1>
+
+    <!-- ── Zoekbalk + filter + knop ── -->
+    <div class="kennisbank-zoekrij">
+        <input
+            type="text"
+            id="zoekInput"
+            class="kennisbank-input"
+            placeholder="Zoek op titel, auteur of trefwoord…"
+            aria-label="Zoeken in de kennisbank"
+        >
+
+        <div class="filter-wrapper">
+            <button class="filter-btn" id="filterBtn" aria-haspopup="listbox" aria-expanded="false">
+                <span id="filterLabel">Alles</span>
+                <span class="filter-chevron">&#8964;</span>
+            </button>
+            <ul class="filter-dropdown" id="filterDropdown" role="listbox">
+                <li class="filter-optie actief" data-waarde="alles" tabindex="0">Alles</li>
+                <li class="filter-optie" data-waarde="rms"    tabindex="0">RMS</li>
+                <li class="filter-optie" data-waarde="mekong" tabindex="0">Mekong</li>
+                <li class="filter-optie" data-waarde="nijl"   tabindex="0">Nijl</li>
+            </ul>
         </div>
+
+        <button class="zoek-btn" id="zoekBtn">Zoeken</button>
+    </div>
+
+    <!-- Resultaatteller -->
+    <p class="resultaat-teller" id="resultaatTeller" aria-live="polite"></p>
+
+    <!-- ── Artikelkaarten ── -->
+    <section class="kennisbank-grid" id="kennisbankGrid" aria-label="Publicaties">
+
+        <!-- NIJL -->
+        <a class="artikel-kaart"
+           href="https://www.hydrosciences.fr"
+           target="_blank" rel="noopener"
+           data-delta="nijl"
+           data-zoektekst="the hydrology of the nile jv sutcliffe yp parks 1999 hydrosciences">
+            <span class="delta-tag tag-nijl">Nijl</span>
+            <h2 class="artikel-titel">[BOEK] The hydrology of the Nile</h2>
+            <p class="artikel-meta">JV Sutcliffe, YP Parks &middot; 1999 &middot; hydrosciences.fr</p>
+            <p class="artikel-snippet">… of the Nile system—the White Nile, the Blue Nile and the main Nile, … the Nile and its surroundings. One of the authors has devoted much of his life to work on the Nile (literally in the Nile …</p>
+        </a>
+
+        <a class="artikel-kaart"
+           href="https://doi.org/10.1016/j.jhydrol.2006.08.015"
+           target="_blank" rel="noopener"
+           data-delta="nijl"
+           data-zoektekst="nile basin water environment society swain 2008 journal hydrology governance">
+            <span class="delta-tag tag-nijl">Nijl</span>
+            <h2 class="artikel-titel">The Nile Basin: Water, Environment and Society</h2>
+            <p class="artikel-meta">A Swain &middot; 2008 &middot; Journal of Hydrology</p>
+            <p class="artikel-snippet">… examines the complex web of social, political and environmental pressures on the Nile Basin, and the challenges of equitable water governance among riparian states …</p>
+        </a>
+
+        <a class="artikel-kaart"
+           href="https://doi.org/10.1023/A:1016199403648"
+           target="_blank" rel="noopener"
+           data-delta="nijl"
+           data-zoektekst="flood risk deltaic sedimentation lower nile stanley warne 2003 subsidence aswan">
+            <span class="delta-tag tag-nijl">Nijl</span>
+            <h2 class="artikel-titel">Flood risk and deltaic sedimentation along the lower Nile</h2>
+            <p class="artikel-meta">JC Stanley, M Warne &middot; 2003 &middot; Kluwer Academic</p>
+            <p class="artikel-snippet">… rates of subsidence in the Nile Delta have accelerated since the completion of the High Aswan Dam, threatening low-lying agricultural land and coastal communities …</p>
+        </a>
+
+        <!-- MEKONG -->
+        <a class="artikel-kaart"
+           href="https://doi.org/10.1016/j.earscirev.2016.12.005"
+           target="_blank" rel="noopener"
+           data-delta="mekong"
+           data-zoektekst="recent evolution mekong delta impacts dams li liu saito nguyen earth science reviews 2017 elsevier erosion shoreline">
+            <span class="delta-tag tag-mekong">Mekong</span>
+            <h2 class="artikel-titel">Recent evolution of the Mekong Delta and the impacts of dams</h2>
+            <p class="artikel-meta">X Li, JP Liu, Y Saito, VL Nguyen &middot; Earth-Science Reviews, 2017 &middot; Elsevier</p>
+            <p class="artikel-snippet">… the Mekong Delta and to link the potential impacts of dams and other factors. Our results show that the Mekong Delta is … Currently, 66% of the entire delta shoreline is under erosion. The …</p>
+        </a>
+
+        <a class="artikel-kaart"
+           href="https://doi.org/10.1038/s41893-020-0564-0"
+           target="_blank" rel="noopener"
+           data-delta="mekong"
+           data-zoektekst="transboundary water governance mekong river commission molle foran kakonen 2020 nature sustainability">
+            <span class="delta-tag tag-mekong">Mekong</span>
+            <h2 class="artikel-titel">Transboundary water governance in the Mekong River Commission</h2>
+            <p class="artikel-meta">F Molle, T Foran, M Kakonen &middot; 2020 &middot; Nature Sustainability</p>
+            <p class="artikel-snippet">… analyses the role of the Mekong River Commission in managing shared water resources and resolving conflicts between upstream dam construction and downstream agricultural livelihoods …</p>
+        </a>
+
+        <a class="artikel-kaart"
+           href="https://doi.org/10.1016/j.scitotenv.2018.05.043"
+           target="_blank" rel="noopener"
+           data-delta="mekong"
+           data-zoektekst="saltwater intrusion climate change mekong delta smajgl ward 2018 sea level rice freshwater">
+            <span class="delta-tag tag-mekong">Mekong</span>
+            <h2 class="artikel-titel">Saltwater intrusion and climate change in the Mekong Delta</h2>
+            <p class="artikel-meta">TP Smajgl, JG Ward &middot; Science of the Total Environment, 2018</p>
+            <p class="artikel-snippet">… the combination of upstream dam operations and sea-level rise accelerates saltwater intrusion deep into the Mekong Delta, threatening rice cultivation and freshwater supply …</p>
+        </a>
+
+        <!-- RMS (Rijn-Maas-Schelde) -->
+        <a class="artikel-kaart"
+           href="https://doi.org/10.1007/s10113-023-02186-8"
+           target="_blank" rel="noopener"
+           data-delta="rms"
+           data-zoektekst="rhine meuse scheldt delta de vriend wang vanmaren peng 2024 springer mega delta discharge rijn maas">
+            <span class="delta-tag tag-rms">RMS</span>
+            <h2 class="artikel-titel">Rhine-Meuse-Scheldt Delta</h2>
+            <p class="artikel-meta">H de Vriend, Z Wang, B Vanmaren, Z Peng &middot; A Report to the Mega-Delta, 2024 &middot; Springer</p>
+            <p class="artikel-snippet">… Rhine being fed by a mixture of snowmelt, rainwater and groundwater whereas the discharge in the Meuse and Scheldt … km², the average river discharge of the Rhine is 2310 m³/s (…</p>
+        </a>
+
+        <a class="artikel-kaart"
+           href="https://doi.org/10.1007/s12665-021-10053-4"
+           target="_blank" rel="noopener"
+           data-delta="rms"
+           data-zoektekst="delta management yangtze rhine meuse scheldt nolf xie vannoorbeeck chen 2021 springer comparative review rms yrd taihu">
+            <span class="delta-tag tag-rms">RMS</span>
+            <h2 class="artikel-titel">Delta management in evolution: a comparative review of the Yangtze River Delta and Rhine-Meuse-Scheldt Delta</h2>
+            <p class="artikel-meta">C Nolf, Y Xie, F Vannoorbeeck, B Chen &middot; Asia-Pacific Journal of Regional …, 2021 &middot; Springer</p>
+            <p class="artikel-snippet">… This paper brings in perspective two emblematic delta regions: the Rhine-Meuse-Scheldt Delta (RMS) situated in Europe and the Taihu Basin (TB) part of the Yangtze River Delta (YRD) …</p>
+        </a>
+
+        <a class="artikel-kaart"
+           href="https://doi.org/10.1007/s11625-021-00956-7"
+           target="_blank" rel="noopener"
+           data-delta="rms"
+           data-zoektekst="flood risk management rhine basin adaptive governance bubeck botzen aerts 2021 room for river wateroverlast rijn">
+            <span class="delta-tag tag-rms">RMS</span>
+            <h2 class="artikel-titel">Flood risk management in the Rhine basin: lessons for adaptive governance</h2>
+            <p class="artikel-meta">P Bubeck, AM Botzen, J Aerts &middot; Sustainability Science, 2021</p>
+            <p class="artikel-snippet">… Room for the River and other adaptive measures have demonstrably reduced peak discharges in the Rhine-Meuse system, providing a transferable governance model for delta management …</p>
+        </a>
+
     </section>
 
-    <section class="delta-section">
-        <h2>Rijn-Maas-Schelde Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Rijn-Maas-Schelde delta</p>
-            <!-- Voeg hier je content toe -->
-        </div>
-    </section>
+    <!-- Geen resultaten melding -->
+    <div class="geen-resultaten" id="geenResultaten" hidden aria-live="polite">
+        <p>Geen publicaties gevonden voor uw zoekopdracht.</p>
+    </div>
 
-    <section class="delta-section">
-        <h2>Nijl Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Nijl delta</p>
-            <!-- Voeg hier je content toe -->
-        </div>
-    </section>
-
-    <section class="delta-section">
-        <h2>Mekong Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Mekong delta</p>
-            <!-- Voeg hier je content toe -->
-        </div>
-    </section>
 </main>
 
 <footer>
-    © 2026 DRIP
-    <li><a href="contact.html">Contact</a></li>
+    © 2026 DRIP &nbsp;|&nbsp; <a href="contact.html">Contact</a>
 </footer>
 
 <script src="../js/script.js"></script>
+<script src="../js/kennisbank.js"></script>
 </body>
 </html>

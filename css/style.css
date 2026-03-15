@@ -113,11 +113,52 @@ header{
     margin-bottom:20px;
 }
 
-.card-content{
-    background:var(--blue);
-    border-radius:25px;
-    height:350px;
-    padding:20px;
+.card-content {
+    background: var(--blue);
+    border-radius: 25px;
+    padding: 24px 20px;  
+}
+
+.card-rij {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.card-rij:last-child {
+    border-bottom: none;
+}
+
+.card-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.card-tekst {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.card-waarde {
+    font-weight: 400;
+    opacity: 0.85;
 }
 
 .icons{

@@ -1,0 +1,296 @@
+/* =========================================
+   kennisbank.css
+   Aanvullende stijlen voor de Kennisbank pagina.
+   Bouwt voort op de bestaande style.css variabelen:
+     --blue: #0E1F5A
+     --light: #e4ecf8
+   ========================================= */
+
+/* ── Paginaopmaak ── */
+.kennisbank-main {
+    padding-top: 100px; /* ruimte voor vaste header */
+    padding-bottom: 80px;
+    min-height: 80vh;
+}
+
+.kennisbank-titel {
+    text-align: center;
+    font-size: 52px;
+    color: var(--blue);
+    margin: 30px 0 40px;
+    letter-spacing: 1px;
+}
+
+/* ── Zoekrij (input + dropdown + knop) ── */
+.kennisbank-zoekrij {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.kennisbank-input {
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-family: "ubuntu", sans-serif;
+    font-weight: 400;
+    border: 3px solid var(--blue);
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+    background: white;
+    color: var(--blue);
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+.kennisbank-input:focus {
+    box-shadow: 0 0 0 3px rgba(14, 31, 90, 0.15);
+}
+
+.kennisbank-input::placeholder {
+    color: rgba(14, 31, 90, 0.45);
+    font-weight: 400;
+}
+
+/* ── Filterdropdown ── */
+.filter-wrapper {
+    position: relative;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 18px;
+    background: white;
+    border: 3px solid var(--blue);
+    border-left: none;
+    border-right: none;
+    color: var(--blue);
+    font-family: "ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
+    height: 100%;
+}
+
+.filter-btn:hover {
+    background: var(--light);
+}
+
+.filter-chevron {
+    font-size: 18px;
+    line-height: 1;
+    transition: transform 0.25s;
+    display: inline-block;
+}
+
+.filter-btn[aria-expanded="true"] .filter-chevron {
+    transform: rotate(180deg);
+}
+
+.filter-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    min-width: 130px;
+    background: white;
+    border: 3px solid var(--blue);
+    border-radius: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    z-index: 500;
+    box-shadow: 0 8px 24px rgba(14, 31, 90, 0.15);
+}
+
+.filter-dropdown.open {
+    display: block;
+}
+
+.filter-optie {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--blue);
+    transition: background 0.15s;
+}
+
+.filter-optie:hover {
+    background: var(--light);
+}
+
+.filter-optie.actief {
+    font-weight: 700;
+    background: var(--light);
+}
+
+/* ── Zoekknop ── */
+.zoek-btn {
+    padding: 14px 28px;
+    background: var(--blue);
+    color: white;
+    border: 3px solid var(--blue);
+    border-radius: 0 30px 30px 0;
+    font-family: "ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.zoek-btn:hover {
+    background: #1a348a;
+    border-color: #1a348a;
+}
+
+/* ── Resultaatteller ── */
+.resultaat-teller {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(14, 31, 90, 0.6);
+    margin: 0 0 30px;
+    font-weight: 400;
+    min-height: 20px;
+}
+
+/* ── Artikelkaarten grid ── */
+.kennisbank-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ── Individuele kaart ── */
+.artikel-kaart {
+    display: block;
+    background: white;
+    border: 2.5px solid var(--blue);
+    border-radius: 16px;
+    padding: 20px 24px;
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition:
+        background 0.22s ease,
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+}
+
+/* Hover-effect: kaart wordt prominenter */
+.artikel-kaart:hover {
+    background: var(--blue);
+    color: white;
+    transform: translateY(-4px) scale(1.012);
+    box-shadow: 0 12px 32px rgba(14, 31, 90, 0.22);
+    border-color: var(--blue);
+}
+
+.artikel-kaart:focus-visible {
+    outline: 3px solid #4a6fe8;
+    outline-offset: 3px;
+}
+
+/* Delta-tag badge */
+.delta-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    transition: background 0.22s, color 0.22s;
+}
+
+.tag-nijl    { background: #cce4ff; color: #0a3370; }
+.tag-mekong  { background: #c8f0e0; color: #0a4d30; }
+.tag-rms     { background: #ffe0cc; color: #5c2200; }
+
+/* Tagkleuren op hover (witte kaart → donker) */
+.artikel-kaart:hover .tag-nijl   { background: rgba(255,255,255,0.25); color: white; }
+.artikel-kaart:hover .tag-mekong { background: rgba(255,255,255,0.25); color: white; }
+.artikel-kaart:hover .tag-rms    { background: rgba(255,255,255,0.25); color: white; }
+
+/* Artikel titel */
+.artikel-titel {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    line-height: 1.4;
+}
+
+/* Auteur / jaar / bron */
+.artikel-meta {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 8px;
+    opacity: 0.75;
+}
+
+/* Snippet preview */
+.artikel-snippet {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.55;
+    opacity: 0.80;
+}
+
+/* ── Geen resultaten ── */
+.geen-resultaten {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--blue);
+    font-size: 17px;
+    opacity: 0.6;
+}
+
+/* ── Verborgen kaarten door filter/zoek ── */
+.artikel-kaart.verborgen {
+    display: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+    .kennisbank-titel {
+        font-size: 36px;
+    }
+
+    .kennisbank-zoekrij {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .kennisbank-input {
+        border-radius: 30px;
+        border-right: 3px solid var(--blue);
+        flex: 1 1 100%;
+    }
+
+    .filter-btn {
+        border-left: 3px solid var(--blue);
+        border-right: 3px solid var(--blue);
+        border-radius: 30px;
+        flex: 1;
+    }
+
+    .zoek-btn {
+        border-radius: 30px;
+        flex: 1;
+    }
+}
