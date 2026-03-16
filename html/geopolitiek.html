@@ -7,8 +7,80 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" href="img/HWUD01_logo_donker_omleind.png">
     <link rel="stylesheet" href="https://use.typekit.net/jfy6anf.css">
+    <style>
+        body.geopolitiek-page .hero {
+            position: relative;
+            top: auto;
+            z-index: 1;
+            height: auto;
+            background: linear-gradient(135deg, rgba(20,48,66,.92), rgba(31,111,178,.82));
+            color: white;
+            padding: 5rem 1.5rem 3.5rem;
+        }
+
+        body.geopolitiek-page .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        body.geopolitiek-page .hero-content h1,
+        body.geopolitiek-page .hero-content p {
+            color: white;
+        }
+
+        body.geopolitiek-page .page-wrap {
+            max-width: 1100px;
+        }
+
+        body.geopolitiek-page .details-grid {
+            display: block;
+        }
+
+        body.geopolitiek-page .hydro-section {
+            padding: 0 0 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--line);
+        }
+
+        body.geopolitiek-page .hydro-section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        body.geopolitiek-page .delta-label {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .45rem .85rem;
+            border-radius: 999px;
+            font-size: .92rem;
+            font-weight: 700;
+            margin-bottom: .9rem;
+        }
+
+        body.geopolitiek-page .hydro-section h2 {
+            margin: 0 0 1rem;
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            color: var(--ink);
+        }
+
+        body.geopolitiek-page .hydro-section p {
+            margin: 0 0 1rem;
+            line-height: 1.8;
+            color: #344a58;
+        }
+
+        body.geopolitiek-page .hydro-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        body.geopolitiek-page .apa-box {
+            margin-top: 1rem;
+        }
+    </style>
 </head>
-<body>
+<body class="geopolitiek-page">
 
 <header>
     <div id="overlay"></div>
@@ -20,62 +92,178 @@
     </div>
 
     <nav class="menu" id="menu">
-   <nav class="menu" id="menu">
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="overdrip.html">Over DRIP</a></li>
-        <li>
-            Thema's
-            <ul>
-                <li><a href="historie.html">Historische gebeurtenissen</a></li>
-                <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
-                <li><a href="projecten.html">Huidige projecten</a></li>
-                <li><a href="watergebruik.html">Watergebruik en governance</a></li>
-                <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
-                <li><a href="kennisbank.html">Kennisbank</a></li>
-            </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="overdrip.html">Over DRIP</a></li>
+            <li>
+                Thema's
+                <ul>
+                    <li><a href="historie.html">Historische gebeurtenissen</a></li>
+                    <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
+                    <li><a href="projecten.html">Huidige projecten</a></li>
+                    <li><a href="watergebruik.html">Watergebruik en governance</a></li>
+                    <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
+                    <li><a href="kennisbank.html">Kennisbank</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
     <section class="hero">
         <div class="hero-content">
-            <h1>Thema Titel</h1>
-            <p>Introductie over het thema</p>
+            <h1>Hydro-politieke relaties</h1>
+            <p>
+                Delta's zijn niet alleen fysiek verbonden met hun rivier, maar ook politiek. Beslissingen over dammen,
+                wateropslag, afvoer, energie en landbouw in bovenstroomse landen hebben direct invloed op veiligheid,
+                verzilting, sedimentaanvoer en watervoorziening in benedenstroomse delta's. Hieronder staat per delta hoe
+                die hydro-politieke situatie er nu uitziet.
+            </p>
         </div>
     </section>
 
-    <section class="delta-section">
-        <h2>Rijn-Maas-Schelde Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Rijn-Maas-Schelde delta</p>
-            <!-- Voeg hier je content toe -->
-        </div>
-    </section>
+    <div class="page-wrap">
+        <section class="intro-note" aria-labelledby="intro-title">
+            <h2 id="intro-title">Waarom dit belangrijk is</h2>
+            <p>
+                Voor veiligheidsplanners is hydro-politiek relevant omdat waterveiligheid in een delta niet alleen wordt
+                bepaald door lokale dijken of ruimtelijke inrichting, maar ook door keuzes die elders in het stroomgebied
+                worden gemaakt. Internationale samenwerking, dambeheer en waterverdeling bepalen mede hoe groot de risico's
+                op overstroming, droogte, verzilting en bodemdaling worden.
+            </p>
+            <div class="legend">
+                <span><i class="dot" style="background: var(--rms);"></i> Rijn-Maas-Schelde</span>
+                <span><i class="dot" style="background: var(--nile);"></i> Nijl</span>
+                <span><i class="dot" style="background: var(--mekong);"></i> Mekong</span>
+            </div>
+        </section>
 
-    <section class="delta-section">
-        <h2>Nijl Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Nijl delta</p>
-            <!-- Voeg hier je content toe -->
-        </div>
-    </section>
+        <section class="hydro-section" id="rms">
+            <div class="delta-label" style="background: rgba(31, 111, 178, 0.14); color: var(--rms);">
+                Rijn-Maas-Schelde delta
+            </div>
+            <h2>Internationale afhankelijkheid in een sterk gereguleerd stroomgebied</h2>
+            <p>
+                De Rijn-Maas-Schelde delta ligt benedenstrooms in een internationaal stroomgebied dat zich uitstrekt over
+                Zwitserland, Duitsland, Frankrijk, Luxemburg, België en Nederland. Hierdoor is Nederland afhankelijk van
+                waterbeheermaatregelen die in andere landen worden genomen. Hoge rivierafvoeren ontstaan meestal door
+                neerslag in Duitsland, Frankrijk en Zwitserland, terwijl droogteperiodes worden beïnvloed door watergebruik
+                en opslag bovenstrooms. Deze afhankelijkheid maakt de delta kwetsbaar voor beslissingen die buiten Nederland
+                worden genomen (Meyer, Nijhuis, &amp; Broesi, 2014).
+            </p>
+            <p>
+                Om risico's te beperken werken de landen samen binnen internationale organisaties zoals de Internationale
+                Commissie ter Bescherming van de Rijn. Binnen deze samenwerking worden afspraken gemaakt over waterkwaliteit,
+                hoogwaterbescherming en klimaatadaptatie. Deze samenwerking heeft geleid tot betere waarschuwingssystemen en
+                meer gecoördineerd rivierbeheer, wat de veiligheid in de delta vergroot (International Commission for the
+                Protection of the Rhine, 2020).
+            </p>
+            <p>
+                Tegelijkertijd blijft er onzekerheid bestaan, omdat Nederland geen controle heeft over de hoeveelheid water
+                die het land binnenkomt. Bij extreme neerslag kan dit leiden tot hoge waterstanden in de delta, terwijl bij
+                langdurige droogte problemen ontstaan voor scheepvaart, landbouw en drinkwater. Klimaatverandering versterkt
+                deze onzekerheid doordat zowel extreme regenval als langdurige droogte vaker voorkomen. Daardoor wordt
+                internationale samenwerking steeds belangrijker voor de veiligheid van de Rijn-Maas-Schelde delta
+                (Rijkswaterstaat, 2023).
+            </p>
+        </section>
 
-    <section class="delta-section">
-        <h2>Mekong Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Mekong delta</p>
-            <!-- Voeg hier je content toe -->
-        </div>
-    </section>
+        <section class="hydro-section" id="nile">
+            <div class="delta-label" style="background: rgba(216, 140, 18, 0.14); color: var(--nile);">
+                Nijl-delta
+            </div>
+            <h2>Waterverdeling, dambeheer en toenemende onzekerheid</h2>
+            <p>
+                De Nijl-delta ligt in Egypte en bevindt zich volledig benedenstrooms in het stroomgebied van de Nijl. Het
+                grootste deel van het water in de rivier is afkomstig uit Ethiopië en Sudan, waardoor Egypte sterk
+                afhankelijk is van beslissingen die in deze landen worden genomen. Deze afhankelijkheid maakt de delta gevoelig
+                voor politieke spanningen over waterverdeling. In de huidige situatie vormt de bouw en exploitatie van de
+                Grand Ethiopian Renaissance Dam (GERD) in Ethiopië het belangrijkste hydro-politieke vraagstuk. Ethiopië
+                gebruikt de dam voor energieopwekking, maar het vullen en beheren van het reservoir kan de hoeveelheid water
+                die Egypte bereikt beïnvloeden (Wheeler et al., 2020).
+            </p>
+            <p>
+                Egypte is bijna volledig afhankelijk van de Nijl voor drinkwater, landbouw en industrie. Wanneer minder water
+                de delta bereikt, kan dit leiden tot verzilting van landbouwgrond, dalende voedselproductie en een groter
+                risico op economische schade. Daarnaast heeft de bouw van de Aswandam in Egypte zelf de natuurlijke dynamiek
+                van de rivier veranderd. De dam voorkomt overstromingen, maar houdt ook sediment tegen dat vroeger de delta
+                ophoogde. Hierdoor daalt de bodem en wordt de kust kwetsbaarder voor zeespiegelstijging en stormvloeden
+                (Swain, 2011).
+            </p>
+            <p>
+                De hydro-politieke situatie wordt verder bemoeilijkt doordat oude verdragen uit de koloniale periode Egypte
+                relatief veel rechten op het water gaven, terwijl bovenstroomse landen tegenwoordig meer water willen
+                gebruiken voor hun eigen ontwikkeling. Dit leidt tot spanningen tussen Ethiopië, Sudan en Egypte, omdat er
+                geen definitieve overeenkomst is over de verdeling van het water. Voor veiligheidsplanners betekent dit dat de
+                toekomstige watertoevoer onzeker blijft, wat risico's geeft voor waterveiligheid, landbouw en stedelijke
+                ontwikkeling in de delta (Wheeler et al., 2020).
+            </p>
+            <p>
+                Door klimaatverandering wordt deze situatie nog complexer. Veranderingen in neerslagpatronen kunnen de
+                rivierafvoer beïnvloeden, terwijl zeespiegelstijging de delta kwetsbaarder maakt voor overstromingen. De
+                veiligheid van de Nijl-delta hangt daardoor niet alleen af van nationale maatregelen, maar ook van
+                internationale samenwerking en politieke stabiliteit in het gehele stroomgebied (Swain, 2011).
+            </p>
+        </section>
+
+        <section class="hydro-section" id="mekong">
+            <div class="delta-label" style="background: rgba(21, 143, 119, 0.14); color: var(--mekong);">
+                Mekong-delta
+            </div>
+            <h2>Dammen bovenstrooms en afnemende controle benedenstrooms</h2>
+            <p>
+                De Mekong-delta ligt in Vietnam en bevindt zich benedenstrooms in een internationaal stroomgebied dat wordt
+                gedeeld door China, Myanmar, Laos, Thailand, Cambodja en Vietnam. In de afgelopen decennia zijn er veel dammen
+                gebouwd in China en Laos om elektriciteit op te wekken. Deze dammen hebben grote invloed op de hoeveelheid
+                water en sediment die de delta bereikt. Sediment is essentieel voor het behoud van de delta, omdat het land
+                ophoogt en beschermt tegen zeespiegelstijging. Door de dammen wordt een groot deel van het sediment
+                tegengehouden, waardoor erosie en bodemdaling toenemen (Kondolf, Rubin, &amp; Minear, 2014).
+            </p>
+            <p>
+                Naast sedimentverlies verandert ook het natuurlijke afvoerpatroon van de rivier. Water wordt in reservoirs
+                opgeslagen en later vrijgelaten, waardoor de waterstanden minder voorspelbaar worden. Dit kan leiden tot
+                onverwachte overstromingen of juist watertekorten in de delta. Voor landbouwgebieden en steden in de
+                Mekong-delta vormt dit een groot veiligheidsrisico, omdat de economie sterk afhankelijk is van stabiele
+                waterstanden (Mekong River Commission, 2021).
+            </p>
+            <p>
+                De samenwerking tussen de landen in het stroomgebied verloopt via de Mekong River Commission, maar niet alle
+                landen nemen volledig deel aan deze organisatie. Vooral China, waar veel dammen liggen, is geen volwaardig
+                lid. Hierdoor heeft Vietnam beperkte invloed op beslissingen die bovenstrooms worden genomen. Dit maakt de
+                delta kwetsbaar, omdat maatregelen in andere landen direct gevolgen kunnen hebben voor overstromingsrisico,
+                verzilting en voedselproductie (Marchand, Pham, &amp; Le, 2014).
+            </p>
+            <p>
+                De huidige hydro-politieke situatie wordt verder beïnvloed door klimaatverandering en bodemdaling. Door
+                zeespiegelstijging dringt zout water verder de delta binnen, terwijl minder sediment de natuurlijke ophoging
+                van het land vermindert. In combinatie met dammen en intensief watergebruik zorgt dit voor een toenemende
+                kwetsbaarheid van de delta. Voor veiligheidsplanners betekent dit dat de bescherming van de Mekong-delta niet
+                alleen afhankelijk is van nationale maatregelen, maar ook van internationale afspraken over waterbeheer in het
+                hele stroomgebied (Mekong River Commission, 2021).
+            </p>
+        </section>
+
+        <section class="sources-box apa-box" aria-labelledby="bron-title">
+            <h2 id="bron-title">Bronvermelding (APA 7)</h2>
+            <ul class="apa-list">
+                <li>International Commission for the Protection of the Rhine. (2020). <em>Rhine 2040: Programme on the sustainable development of the Rhine</em>. ICBR.</li>
+                <li>Kondolf, G. M., Rubin, Z. K., &amp; Minear, J. T. (2014). Dams on the Mekong: Cumulative sediment starvation. <em>Water Resources Research, 50</em>(6), 5158-5169.</li>
+                <li>Marchand, M., Pham, D. Q., &amp; Le, T. (2014). Mekong delta, Vietnam. In H. Meyer &amp; S. Nijhuis (Eds.), <em>Urbanized deltas in transition</em> (pp. 51-58). Technepress.</li>
+                <li>Meyer, V. J., Nijhuis, S., &amp; Broesi, R. (2014). Rhine-Meuse-Scheldt delta, Netherlands. In H. Meyer &amp; S. Nijhuis (Eds.), <em>Urbanized deltas in transition</em> (pp. 41-50). Technepress.</li>
+                <li>Mekong River Commission. (2021). <em>State of the Basin Report 2021</em>. MRC.</li>
+                <li>Rijkswaterstaat. (2023). <em>Water management in the Netherlands</em>. Ministerie van Infrastructuur en Waterstaat.</li>
+                <li>Swain, A. (2011). Challenges for water sharing in the Nile basin: Changing geo-politics and changing climate. <em>Hydrological Sciences Journal, 56</em>(4), 687-702.</li>
+                <li>Wheeler, K. G., Basheer, M., Mekonnen, Z. T., Eltoum, S. O., Mersha, A., Abdo, G. M., &amp; Zagona, E. A. (2020). Cooperative filling approaches for the Grand Ethiopian Renaissance Dam. <em>Water International, 45</em>(6-7), 611-634.</li>
+            </ul>
+        </section>
+    </div>
 </main>
 
 <footer>
     © 2026 DRIP
-    <li><a href="contact.html">Contact</a></li>
+    <div style="margin-top: .5rem;"><a href="contact.html">Contact</a></div>
 </footer>
 
 <script src="../js/script.js"></script>
