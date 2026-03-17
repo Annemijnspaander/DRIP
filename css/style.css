@@ -1,6 +1,6 @@
 :root{
     --blue: #0E1F5A;
-    --light: #e4ecf8;
+    --light: #ffffff;
 }
 
 body{
@@ -114,7 +114,7 @@ header{
 }
 
 .hero-overlay h1{
-    font-size:300px;
+    font: size 100px;
     margin:0;
     text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
 }
@@ -159,8 +159,8 @@ header{
 }
 
 .card-icon {
-    width: 100px;    
-    height: 100px;     
+    width: 80px;    
+    height: 80px;     
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.15);
     flex-shrink: 0;
@@ -171,14 +171,14 @@ header{
 }
 
 .card-icon img {
-    width: 100px;      
-    height: 100px;     
+    width: 80px;      
+    height: 80px;     
     object-fit: contain;
 }
 
 .card-tekst {
     color: white;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.3;
 }
