@@ -1,82 +1,250 @@
+Projecten · HTML
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huidige projecten</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projecten.css">
     <link rel="icon" type="image/png" href="img/HWUD01_logo_donker_omleind.png">
     <link rel="stylesheet" href="https://use.typekit.net/jfy6anf.css">
 </head>
 <body>
     
+<div id="overlay"></div>
+ 
+<nav class="menu" id="menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="overdrip.html">Over DRIP</a></li>
+        <li>
+            Thema's
+            <ul>
+                <li><a href="historie.html">Historische gebeurtenissen</a></li>
+                <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
+                <li><a href="projecten.html">Huidige projecten</a></li>
+                <li><a href="watergebruik.html">Watergebruik en governance</a></li>
+                <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
+                <li><a href="kennisbank.html">Kennisbank</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+ 
 <header id="top">
-    <div id="overlay"></div>
     <div class="nav">
         <div class="logo">
-            <img src="img/HWUD01_Logo.png" alt="DRIP logo">
+            <img src="../img/HWUD01_Logo.png" alt="DRIP logo">
         </div>
         <div class="burger" id="burger">☰</div>
     </div>
-
-    <nav class="menu" id="menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="overdrip.html">Over DRIP</a></li>
-            <li>
-                Thema's
-                <ul>
-                    <li><a href="historie.html">Historische gebeurtenissen</a></li>
-                    <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
-                    <li><a href="projecten.html">Huidige projecten</a></li>
-                    <li><a href="watergebruik.html">Watergebruik en governance</a></li>
-                    <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
-                    <li><a href="kennisbank.html">Kennisbank</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 </header>
-
+ 
+<div class="hp-header">
+  <h1 class="hp-title">Huidige Projecten</h1>
+  <nav class="hp-nav">
+    <a href="#sec-mekong" class="active">Mekong</a>
+    <a href="#sec-nijl">Nijl</a>
+    <a href="#sec-rijn">Rijn-Maas-Schelde</a>
+  </nav>
+</div>
+ 
 <main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Thema Titel</h1>
-            <p>Introductie over het thema</p>
+ 
+    <!-- ── Mekong ── -->
+    <section id="sec-mekong" class="hp-section">
+      <h2 class="hp-section-title">Mekong</h2>
+      <p class="hp-section-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+ 
+      <div class="hp-cards-stack">
+ 
+        <!-- Card 1 -->
+        <div class="hp-card" id="card-cantho">
+          <div class="hp-card-preview" onclick="toggleCard('card-cantho')">
+            <div class="hp-card-content">
+              <span class="hp-badge">Mekong</span>
+              <h3 class="hp-card-title">Can Tho Urban Development &amp; Resilience Project</h3>
+              <p class="hp-card-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+              <button class="hp-lees-meer"><span class="arrow">›</span> Lees Meer</button>
+            </div>
+            <div class="hp-card-img">
+              <svg viewBox="0 0 340 140" xmlns="http://www.w3.org/2000/svg">
+                <rect width="340" height="140" fill="#b0bdd4"/>
+                <rect x="0" y="70" width="340" height="70" fill="#8c9dbf"/>
+                <ellipse cx="80" cy="72" rx="60" ry="18" fill="#6a7fa5" opacity="0.5"/>
+                <rect x="30" y="40" width="18" height="32" fill="#5a6e8a"/>
+                <rect x="60" y="30" width="22" height="42" fill="#4f6278"/>
+                <rect x="95" y="50" width="14" height="22" fill="#5a6e8a"/>
+                <rect x="120" y="44" width="20" height="28" fill="#4f6278"/>
+                <rect x="150" y="36" width="26" height="36" fill="#3d5166"/>
+                <circle cx="260" cy="55" r="28" fill="#7c90a8" opacity="0.4"/>
+                <circle cx="290" cy="62" r="18" fill="#9aafc6" opacity="0.3"/>
+                <text x="170" y="122" text-anchor="middle" fill="white" font-size="11" font-family="sans-serif" opacity="0.7">Can Tho, Vietnam</text>
+              </svg>
+            </div>
+          </div>
+          <div class="hp-article">
+            <div class="hp-article-inner">
+              <div class="hp-article-body">
+                <h4>Over dit project</h4>
+                <p>Het Can Tho Urban Development &amp; Resilience Project richt zich op de verbetering van stedelijke infrastructuur en klimaatweerbaarheid in Can Tho, de grootste stad in de Mekong Delta. De stad kampt met toenemende overstromingen als gevolg van klimaatverandering en bodemdaling.</p>
+                <p>Het project omvat de aanleg van verbeterde drainage systemen, de restauratie van waterkeringen, en de ontwikkeling van groene buffergebieden langs de rivieroevers. Daarnaast worden lokale gemeenschappen betrokken bij het ontwerp en beheer van waterinfrastructuur.</p>
+                <p>In samenwerking met de Vietnamese overheid en internationale partners wordt gewerkt aan een geïntegreerde aanpak die zowel directe overstromingsbescherming biedt als langetermijn stedelijke veerkracht opbouwt.</p>
+              </div>
+              <div class="hp-article-meta">
+                <dl class="hp-meta-block"><dt>Locatie</dt><dd>Can Tho, Vietnam</dd></dl>
+                <dl class="hp-meta-block"><dt>Looptijd</dt><dd>2021 – 2027</dd></dl>
+                <dl class="hp-meta-block"><dt>Partners</dt><dd>Wereldbank, Vietnamese Rijksoverheid</dd></dl>
+                <dl class="hp-meta-block"><dt>Status</dt><dd>In uitvoering</dd></dl>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <section class="delta-section">
-        <h2>Rijn-Maas-Schelde Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Rijn-Maas-Schelde delta</p>
-            <!-- Voeg hier je content toe -->
+ 
+        <!-- Card 2 -->
+        <div class="hp-card" id="card-flood">
+          <div class="hp-card-preview" onclick="toggleCard('card-flood')">
+            <div class="hp-card-content">
+              <span class="hp-badge">Mekong</span>
+              <h3 class="hp-card-title">Mekong Delta Flood Risk Management</h3>
+              <p class="hp-card-desc">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
+              <button class="hp-lees-meer"><span class="arrow">›</span> Lees Meer</button>
+            </div>
+            <div class="hp-card-img">
+              <svg viewBox="0 0 340 140" xmlns="http://www.w3.org/2000/svg">
+                <rect width="340" height="140" fill="#9db5c8"/>
+                <rect x="0" y="80" width="340" height="60" fill="#6a92aa"/>
+                <path d="M0 85 Q40 75 80 85 Q120 95 160 82 Q200 70 240 82 Q280 94 340 80 L340 140 L0 140Z" fill="#5a8298" opacity="0.7"/>
+                <rect x="140" y="50" width="60" height="35" fill="#3d5e70" rx="2"/>
+                <rect x="155" y="35" width="30" height="18" fill="#4a6d80" rx="1"/>
+                <rect x="165" y="28" width="10" height="10" fill="#5a7d90"/>
+                <rect x="40" y="60" width="45" height="25" fill="#3d5e70" rx="2"/>
+                <rect x="240" y="55" width="50" height="30" fill="#3d5e70" rx="2"/>
+                <text x="170" y="122" text-anchor="middle" fill="white" font-size="11" font-family="sans-serif" opacity="0.7">Mekong Delta</text>
+              </svg>
+            </div>
+          </div>
+          <div class="hp-article">
+            <div class="hp-article-inner">
+              <div class="hp-article-body">
+                <h4>Over dit project</h4>
+                <p>Het Mekong Delta Flood Risk Management project heeft als doel de overstromingsrisico's in de laaggelegen delen van de Mekong Delta te reduceren. Jaarlijkse overstromingen treffen miljoenen mensen en veroorzaken grote economische schade aan landbouw en infrastructuur.</p>
+                <p>Kernonderdelen zijn de modernisering van sluis- en stuuwsystemen, het versterken van dijken en rivieroevers, en de implementatie van een regionaal vroegwaarschuwingssysteem voor extreem hoog water. Speciale aandacht gaat uit naar kwetsbare gemeenschappen in laaggelegen polders.</p>
+                <p>Het project werkt nauw samen met Cambodja en Laos aan grensoverschrijdende waterverdeling en gedeeld databeheer, conform de afspraken binnen de Mekong River Commission.</p>
+              </div>
+              <div class="hp-article-meta">
+                <dl class="hp-meta-block"><dt>Locatie</dt><dd>Mekong Delta, Vietnam &amp; Cambodja</dd></dl>
+                <dl class="hp-meta-block"><dt>Looptijd</dt><dd>2020 – 2026</dd></dl>
+                <dl class="hp-meta-block"><dt>Partners</dt><dd>Mekong River Commission, ADB</dd></dl>
+                <dl class="hp-meta-block"><dt>Status</dt><dd>In uitvoering</dd></dl>
+              </div>
+            </div>
+          </div>
         </div>
+ 
+      </div>
     </section>
-
-    <section class="delta-section">
-        <h2>Nijl Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Nijl delta</p>
-            <!-- Voeg hier je content toe -->
+ 
+    <!-- ── Nijl ── -->
+    <section id="sec-nijl" class="hp-section">
+      <h2 class="hp-section-title">Nijl</h2>
+      <p class="hp-section-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+ 
+      <div class="hp-cards-stack">
+        <div class="hp-card" id="card-nijl">
+          <div class="hp-card-preview" onclick="toggleCard('card-nijl')">
+            <div class="hp-card-content">
+              <span class="hp-badge">Nijl</span>
+              <h3 class="hp-card-title">Nile Basin Water Security Initiative</h3>
+              <p class="hp-card-desc">Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <button class="hp-lees-meer"><span class="arrow">›</span> Lees Meer</button>
+            </div>
+            <div class="hp-card-img">
+              <svg viewBox="0 0 340 140" xmlns="http://www.w3.org/2000/svg">
+                <rect width="340" height="140" fill="#c9b88a"/>
+                <rect x="0" y="90" width="340" height="50" fill="#a8966a"/>
+                <polygon points="60,90 85,30 110,90" fill="#8a7550"/>
+                <polygon points="140,90 170,20 200,90" fill="#7d6844"/>
+                <polygon points="230,90 252,45 274,90" fill="#8a7550"/>
+                <rect x="130" y="80" width="80" height="14" fill="#6b9aae" opacity="0.6"/>
+                <text x="170" y="122" text-anchor="middle" fill="white" font-size="11" font-family="sans-serif" opacity="0.7">Nijlvallei, Egypte</text>
+              </svg>
+            </div>
+          </div>
+          <div class="hp-article">
+            <div class="hp-article-inner">
+              <div class="hp-article-body">
+                <h4>Over dit project</h4>
+                <p>De Nile Basin Water Security Initiative richt zich op duurzaam waterbeheer in het stroomgebied van de Nijl, dat zich uitstrekt over elf landen. Toenemende bevolkingsdruk, klimaatverandering en politieke spanningen over waterverdeling maken samenwerking urgenter dan ooit.</p>
+                <p>Het programma ondersteunt gezamenlijk databeheer, capaciteitsopbouw bij nationale waterdiensten, en diplomatieke processen rondom de verdeling van Nijlwater. Speciale aandacht gaat naar de situatie rondom de Grand Ethiopian Renaissance Dam.</p>
+              </div>
+              <div class="hp-article-meta">
+                <dl class="hp-meta-block"><dt>Locatie</dt><dd>Oost-Afrika &amp; Egypte</dd></dl>
+                <dl class="hp-meta-block"><dt>Looptijd</dt><dd>2019 – 2025</dd></dl>
+                <dl class="hp-meta-block"><dt>Partners</dt><dd>Nile Basin Initiative, UNDP</dd></dl>
+                <dl class="hp-meta-block"><dt>Status</dt><dd>Afsluitende fase</dd></dl>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <section class="delta-section">
-        <h2>Mekong Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Mekong delta</p>
-            <!-- Voeg hier je content toe -->
+ 
+    <!-- ── Rijn-Maas-Schelde ── -->
+    <section id="sec-rijn" class="hp-section">
+      <h2 class="hp-section-title">Rijn-Maas-Schelde</h2>
+      <p class="hp-section-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+ 
+      <div class="hp-cards-stack">
+        <div class="hp-card" id="card-delta">
+          <div class="hp-card-preview" onclick="toggleCard('card-delta')">
+            <div class="hp-card-content">
+              <span class="hp-badge">Rijn-Maas-Schelde</span>
+              <h3 class="hp-card-title">Dutch Delta Programme — Adaptive Management</h3>
+              <p class="hp-card-desc">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+              <button class="hp-lees-meer"><span class="arrow">›</span> Lees Meer</button>
+            </div>
+            <div class="hp-card-img">
+              <svg viewBox="0 0 340 140" xmlns="http://www.w3.org/2000/svg">
+                <rect width="340" height="140" fill="#a8c4d4"/>
+                <rect x="0" y="75" width="340" height="65" fill="#7eaabf"/>
+                <path d="M0 78 Q50 68 100 75 Q150 82 200 72 Q260 62 340 72 L340 140 L0 140Z" fill="#6090a5" opacity="0.8"/>
+                <rect x="20" y="50" width="30" height="28" fill="#e8e0cc" rx="1"/>
+                <rect x="25" y="40" width="20" height="12" fill="#d4cbb5" rx="1"/>
+                <rect x="85" y="42" width="28" height="36" fill="#e8e0cc" rx="1"/>
+                <rect x="240" y="44" width="32" height="34" fill="#e8e0cc" rx="1"/>
+                <text x="170" y="122" text-anchor="middle" fill="white" font-size="11" font-family="sans-serif" opacity="0.7">Delta, Nederland</text>
+              </svg>
+            </div>
+          </div>
+          <div class="hp-article">
+            <div class="hp-article-inner">
+              <div class="hp-article-body">
+                <h4>Over dit project</h4>
+                <p>Het Dutch Delta Programme ondersteunt adaptief waterbeheer in het Rijn-Maas-Schelde deltagebied. Nederland exporteert hiermee kennis en ervaring naar andere deltagebieden wereldwijd, terwijl tegelijk de eigen infrastructuur verder wordt versterkt.</p>
+                <p>Onderdelen zijn dijkversterkingen, ruimte-voor-de-rivier maatregelen, en de integratie van zoetwaterbeheer met zeewaartse kustverdediging. Samenwerking met België en Duitsland is essentieel voor het grensoverschrijdend stroomgebiedbeheer.</p>
+              </div>
+              <div class="hp-article-meta">
+                <dl class="hp-meta-block"><dt>Locatie</dt><dd>Nederland, België, Duitsland</dd></dl>
+                <dl class="hp-meta-block"><dt>Looptijd</dt><dd>2022 – 2028</dd></dl>
+                <dl class="hp-meta-block"><dt>Partners</dt><dd>Rijkswaterstaat, Vlaamse Overheid</dd></dl>
+                <dl class="hp-meta-block"><dt>Status</dt><dd>In uitvoering</dd></dl>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+ 
 </main>
-
+ 
 <footer>
-    © 2026 DRIP
-    <li><a href="contact.html">Contact</a></li>
+    <p>© 2026 DRIP</p>
+    <a href="contact.html">Contact</a>
 </footer>
-
-<script src="../js/script.js"></script>
+ 
+<script src="../js/projecten.js"></script>
+ 
 </body>
 </html>
