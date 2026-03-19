@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacht.css">
     <link rel="icon" type="image/png" href="img/HWUD01_logo_donker_omleind.png">
     <link rel="stylesheet" href="https://use.typekit.net/jfy6anf.css">
 </head>
@@ -14,62 +15,242 @@
     <div id="overlay"></div>
     <div class="nav">
         <div class="logo">
-            <img src="img/HWUD01_Logo.png" alt="DRIP logo">
+            <img src="../img/HWUD01_Logo.png" alt="DRIP logo">
         </div>
         <div class="burger" id="burger">☰</div>
     </div>
 
     <nav class="menu" id="menu">
-   <nav class="menu" id="menu">
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="overdrip.html">Over DRIP</a></li>
-        <li>
-            Thema's
-            <ul>
-                <li><a href="historie.html">Historische gebeurtenissen</a></li>
-                <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
-                <li><a href="projecten.html">Huidige projecten</a></li>
-                <li><a href="watergebruik.html">Watergebruik en governance</a></li>
-                <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
-                <li><a href="kennisbank.html">Kennisbank</a></li>
-            </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="overdrip.html">Over DRIP</a></li>
+            <li>
+                Thema's
+                <ul>
+                    <li><a href="historie.html">Historische gebeurtenissen</a></li>
+                    <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
+                    <li><a href="projecten.html">Huidige projecten</a></li>
+                    <li><a href="watergebruik.html">Watergebruik en governance</a></li>
+                    <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
+                    <li><a href="kennisbank.html">Kennisbank</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Thema Titel</h1>
-            <p>Introductie over het thema</p>
+<main class="contact-page compact-contact-page">
+    <section class="contact-hero compact-contact-hero">
+        <div class="contact-hero-inner compact-contact-inner">
+            <p class="eyebrow">Contact</p>
+            <h1>Neem contact op met DRIP</h1>
+            <p class="intro-text compact-intro">Kies hieronder wat je wilt doen.</p>
         </div>
     </section>
 
-    <section class="delta-section">
-        <h2>Rijn-Maas-Schelde Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Rijn-Maas-Schelde delta</p>
-            <!-- Voeg hier je content toe -->
+    <section class="contact-choice-section" aria-labelledby="contact-keuze-title">
+        <div class="contact-choice-wrap">
+            <h2 id="contact-keuze-title">Waar gaat je bericht over?</h2>
+
+            <div class="contact-choice-grid" role="tablist" aria-label="Type contact">
+                <button class="contact-choice active" type="button" data-target="form-upload" aria-expanded="true">
+                    <span class="choice-number">01</span>
+                    <span class="choice-title">Bestand aanleveren</span>
+                    <span class="choice-text">Rapport, data, kaart of dataset delen</span>
+                </button>
+
+                <button class="contact-choice" type="button" data-target="form-question" aria-expanded="false">
+                    <span class="choice-number">02</span>
+                    <span class="choice-title">Vraag stellen</span>
+                    <span class="choice-text">Inhoudelijke of praktische vraag sturen</span>
+                </button>
+
+                <button class="contact-choice" type="button" data-target="form-other" aria-expanded="false">
+                    <span class="choice-number">03</span>
+                    <span class="choice-title">Iets anders</span>
+                    <span class="choice-text">Suggestie, samenwerking of ander bericht</span>
+                </button>
+            </div>
         </div>
     </section>
 
-    <section class="delta-section">
-        <h2>Nijl Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Nijl delta</p>
-            <!-- Voeg hier je content toe -->
-        </div>
-    </section>
+    <section class="contact-forms-wrap" aria-label="Contactformulieren">
+        <article class="contact-panel contact-panel-toggle is-open" id="form-upload">
+            <div class="panel-head">
+                <p class="panel-tag">Aanleveren</p>
+                <h2>Bestand of data insturen</h2>
+            </div>
 
-    <section class="delta-section">
-        <h2>Mekong Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Mekong delta</p>
-            <!-- Voeg hier je content toe -->
-        </div>
+            <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
+                <div class="form-row two-columns">
+                    <div class="form-field">
+                        <label for="upload-name">Naam</label>
+                        <input type="text" id="upload-name" name="upload-name" placeholder="Je naam">
+                    </div>
+                    <div class="form-field">
+                        <label for="upload-org">Organisatie</label>
+                        <input type="text" id="upload-org" name="upload-org" placeholder="Bijvoorbeeld gemeente, universiteit of bedrijf">
+                    </div>
+                </div>
+
+                <div class="form-row two-columns">
+                    <div class="form-field">
+                        <label for="upload-email">E-mailadres</label>
+                        <input type="email" id="upload-email" name="upload-email" placeholder="naam@email.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="upload-delta">Delta / gebied</label>
+                        <select id="upload-delta" name="upload-delta">
+                            <option value="">Kies een gebied</option>
+                            <option value="rms">Rijn-Maas-Schelde</option>
+                            <option value="nile">Nijl</option>
+                            <option value="mekong">Mekong</option>
+                            <option value="multiple">Meerdere / anders</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row two-columns">
+                    <div class="form-field">
+                        <label for="upload-type">Type bestand</label>
+                        <select id="upload-type" name="upload-type">
+                            <option value="">Kies een type</option>
+                            <option value="report">Rapport</option>
+                            <option value="dataset">Dataset</option>
+                            <option value="map">Kaart / visualisatie</option>
+                            <option value="paper">Artikel / paper</option>
+                            <option value="other">Anders</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="upload-title">Titel</label>
+                        <input type="text" id="upload-title" name="upload-title" placeholder="Titel of onderwerp">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field upload-field">
+                        <label for="upload-file">Bestand uploaden</label>
+                        <input type="file" id="upload-file" name="upload-file">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="upload-message">Korte toelichting</label>
+                        <textarea id="upload-message" name="upload-message" rows="5" placeholder="Beschrijf kort wat je aanlevert en waarom het relevant is."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="primary-btn">Verstuur</button>
+                </div>
+            </form>
+        </article>
+
+        <article class="contact-panel contact-panel-toggle" id="form-question" hidden>
+            <div class="panel-head">
+                <p class="panel-tag">Vraag</p>
+                <h2>Stel een vraag</h2>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row two-columns">
+                    <div class="form-field">
+                        <label for="question-name">Naam</label>
+                        <input type="text" id="question-name" name="question-name" placeholder="Je naam">
+                    </div>
+                    <div class="form-field">
+                        <label for="question-org">Organisatie</label>
+                        <input type="text" id="question-org" name="question-org" placeholder="Bijvoorbeeld gemeente, universiteit of bedrijf">
+                    </div>
+                </div>
+
+                <div class="form-row two-columns">
+                    <div class="form-field">
+                        <label for="question-email">E-mailadres</label>
+                        <input type="email" id="question-email" name="question-email" placeholder="naam@email.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="question-delta">Delta / thema</label>
+                        <select id="question-delta" name="question-delta">
+                            <option value="">Kies een thema</option>
+                            <option value="rms">Rijn-Maas-Schelde</option>
+                            <option value="nile">Nijl</option>
+                            <option value="mekong">Mekong</option>
+                            <option value="general">Algemeen / anders</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="question-subject">Onderwerp</label>
+                        <input type="text" id="question-subject" name="question-subject" placeholder="Onderwerp van je vraag">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="question-message">Bericht</label>
+                        <textarea id="question-message" name="question-message" rows="6" placeholder="Typ hier je vraag."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="secondary-btn">Verstuur</button>
+                </div>
+            </form>
+        </article>
+
+        <article class="contact-panel contact-panel-toggle" id="form-other" hidden>
+            <div class="panel-head">
+                <p class="panel-tag">Anders</p>
+                <h2>Ander bericht sturen</h2>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row two-columns">
+                    <div class="form-field">
+                        <label for="other-name">Naam</label>
+                        <input type="text" id="other-name" name="other-name" placeholder="Je naam">
+                    </div>
+                    <div class="form-field">
+                        <label for="other-org">Organisatie</label>
+                        <input type="text" id="other-org" name="other-org" placeholder="Bijvoorbeeld gemeente, universiteit of bedrijf">
+                    </div>
+                </div>
+
+                <div class="form-row two-columns">
+                    <div class="form-field">
+                        <label for="other-email">E-mailadres</label>
+                        <input type="email" id="other-email" name="other-email" placeholder="naam@email.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="other-type">Type bericht</label>
+                        <select id="other-type" name="other-type">
+                            <option value="">Kies een type</option>
+                            <option value="collab">Samenwerking</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="media">Media / pers</option>
+                            <option value="other">Anders</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="other-message">Bericht</label>
+                        <textarea id="other-message" name="other-message" rows="6" placeholder="Typ hier je bericht."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="secondary-btn">Verstuur</button>
+                </div>
+            </form>
+        </article>
     </section>
 </main>
 
@@ -79,5 +260,8 @@
 </footer>
 
 <script src="../js/script.js"></script>
+<script src="../js/Contact.js"></script>
 </body>
+</html>
+
 </html>
