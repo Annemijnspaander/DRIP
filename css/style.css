@@ -201,30 +201,121 @@ header{
     border-radius:50%;
 }
 
-.themes{
-    padding:80px 40px;
+.themes {
+    padding: 80px 40px;
 }
 
-.theme-title{
-    text-align:center;
-    font-size:40px;
-    margin-bottom:50px;
+.theme-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
 
-.theme-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:40px;
+.theme-wrapper {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
 }
 
-.theme-box{
-    background:#e4ecf8;
-    border:4px solid var(--blue);
-    border-radius:25px;
-    padding:40px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.3s;
+.theme-groep {
+    display: grid;
+    gap: 24px;
+}
+
+.theme-groep-links {
+    flex: 2;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 40px;
+}
+
+.theme-groep-rechts {
+    flex: 1;
+    grid-template-columns: 1fr;
+    padding-left: 40px;
+}
+
+.theme-divider {
+    width: 3px;
+    background: var(--blue);
+    border-radius: 3px;
+    flex-shrink: 0;
+    opacity: 0.25;
+    align-self: stretch;
+}
+
+.theme-kaart {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    height: 320px;
+}
+
+.theme-kaart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.theme-kaart::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(14, 31, 90, 0.05) 0%,
+        rgba(14, 31, 90, 0.75) 100%
+    );
+    transition: background 0.3s ease;
+}
+
+.theme-kaart:hover img {
+    transform: scale(1.05);
+}
+
+.theme-kaart:hover::after {
+    background: linear-gradient(
+        to bottom,
+        rgba(14, 31, 90, 0.1) 0%,
+        rgba(14, 31, 90, 0.88) 100%
+    );
+}
+
+.theme-kaart-tekst {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 22px;
+    color: white;
+    z-index: 1;
+}
+
+.theme-kaart-tekst h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: white;
+}
+
+.theme-kaart-tekst p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.88);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.theme-kaart:hover .theme-kaart-tekst p {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .theme-box:hover{
@@ -251,15 +342,33 @@ footer{
         width:100%;
     }
 
-    .theme-grid{
-        grid-template-columns:1fr;
+   .theme-wrapper {
+        flex-direction: column;
+    }
+
+    .theme-groep-links {
+        grid-template-columns: 1fr;
+        padding-right: 0;
+    }
+
+    .theme-groep-rechts {
+    flex: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;   
+    padding-left: 40px;
+}
+
+    .theme-divider {
+        width: 100%;
+        height: 3px;
+        margin: 20px 0;
     }
 
     .hero-overlay h1{
         font-size:70px;
     }
 }
-s
+
 .overlay-bg{
     position: fixed;
     inset: 0;
@@ -306,7 +415,9 @@ a{
 
 .filter-btn{
     border:none;
-    border-radius:999px;
+    border-left: 2px solid var(--blue); 
+    border-right: none;
+    border-radius:0px;
     padding:12px 18px;
     cursor:pointer;
     font-weight:700;

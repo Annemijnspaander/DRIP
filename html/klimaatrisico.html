@@ -3,80 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klimaatrisico</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/png" href="img/HWUD01_logo_donker_omleind.png">
+    <title>Klimaatrisico's</title>
+    <link rel="stylesheet" href="../css/projecten.css">
+    <link rel="icon" type="image/png" href="../img/HWUD01_logo_donker_omleind.png">
     <link rel="stylesheet" href="https://use.typekit.net/jfy6anf.css">
 </head>
 <body>
 
+<div id="overlay"></div>
+
+<nav class="menu" id="menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="overdrip.html">Over DRIP</a></li>
+        <li>
+            Thema's
+            <ul>
+                <li><a href="historie.html">Historische gebeurtenissen</a></li>
+                <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
+                <li><a href="projecten.html">Huidige projecten</a></li>
+                <li><a href="watergebruik.html">Watergebruik en governance</a></li>
+                <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
+                <li><a href="kennisbank.html">Kennisbank</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
 <header id="top">
-    <div id="overlay"></div>
     <div class="nav">
         <div class="logo">
-            <img src="img/HWUD01_Logo.png" alt="DRIP logo">
+            <img src="../img/HWUD01_Logo.png" alt="DRIP logo">
         </div>
         <div class="burger" id="burger">☰</div>
     </div>
-
-    <nav class="menu" id="menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="overdrip.html">Over DRIP</a></li>
-            <li>
-                Thema's
-                <ul>
-                    <li><a href="historie.html">Historische gebeurtenissen</a></li>
-                    <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
-                    <li><a href="projecten.html">Huidige projecten</a></li>
-                    <li><a href="watergebruik.html">Watergebruik en governance</a></li>
-                    <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
-                    <li><a href="kennisbank.html">Kennisbank</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 </header>
 
+<div class="hp-header">
+    <h1 class="hp-title">Klimaatrisico's</h1>
+    <nav class="hp-nav">
+        <a href="#sec-intro" class="active">Introductie</a>
+        <a href="#sec-rms">Rijn-Maas-Schelde</a>
+        <a href="#sec-mekong">Mekong</a>
+        <a href="#sec-nijl">Nijl</a>
+    </nav>
+</div>
+
 <main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Thema Titel</h1>
-            <p>Introductie over het thema</p>
+
+    <!-- ── Introductie ── -->
+    <section id="sec-intro" class="hp-section kr-sectie">
+        <h2 class="hp-section-title">Gedeelde uitdagingen</h2>
+        <div class="kr-tekst">
+            <p>Hoewel de Rijn-Maas-Schelde delta, Mekongdelta en Nijldelta geografisch en sociaal sterk van elkaar verschillen, worden ze geconfronteerd met vergelijkbare klimaatrisico's. De belangrijkste bedreigingen zijn zeespiegelstijging, bodemdaling, verzilting en veranderende rivierafvoeren. In veel gevallen versterken menselijke activiteiten, zoals grondwaterwinning en rivierregulatie, deze problemen.</p>
+            <p>Daarom is effectief waterbeheer essentieel om de leefbaarheid en economische functies van deze delta's in de toekomst te waarborgen. Internationale samenwerking, adaptieve infrastructuur en duurzaam waterbeheer worden door veel wetenschappelijke studies gezien als cruciale strategieën om de gevolgen van klimaatverandering in delta's te beperken. Op deze pagina wordt per delta op de klimaatrisico's ingegaan.</p>
         </div>
     </section>
 
-    <section class="delta-section">
-        <h2>Rijn-Maas-Schelde Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Rijn-Maas-Schelde delta</p>
-            <!-- Voeg hier je content toe -->
+    <!-- ── Interactieve grafiek ── -->
+<section class="hp-section kr-sectie">
+    <h2 class="hp-section-title">Relatieve zeespiegelstijging per delta</h2>
+
+    <div class="kr-tekst">
+        <p>Gemiddeld stijgt de zeespiegel tussen de 2 en 4 mm per jaar. Naast de zeespiegelstijging ervaren de delta's last van bodemdaling. De totale relatieve stijging is de combinatie van zeespiegelstijging én bodemdaling. Met de slider kun je de zeespiegelstijging aanpassen tussen het mondiale minimum en maximum. De grafiek toont de cumulatieve optelsom over 50 jaar.</p>
+    </div>
+
+    <div style="max-width:700px;margin:2rem auto 0;">
+
+        <!-- Samenvattingskaarten -->
+        <div style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap">
+            <div style="background:#e4ecf8;border-radius:8px;padding:1rem;flex:1;min-width:120px">
+                <div style="font-size:12px;color:#0E1F5A;opacity:0.6;margin-bottom:4px">Nederland (RMS)</div>
+                <div style="font-size:22px;font-weight:700;color:#0E1F5A" id="val-nl">–</div>
+                <div style="font-size:11px;color:#0E1F5A;opacity:0.5;margin-top:2px">mm na 50 jaar</div>
+            </div>
+            <div style="background:#e4ecf8;border-radius:8px;padding:1rem;flex:1;min-width:120px">
+                <div style="font-size:12px;color:#0E1F5A;opacity:0.6;margin-bottom:4px">Vietnam (Mekong)</div>
+                <div style="font-size:22px;font-weight:700;color:#0E1F5A" id="val-vn">–</div>
+                <div style="font-size:11px;color:#0E1F5A;opacity:0.5;margin-top:2px">mm na 50 jaar</div>
+            </div>
+            <div style="background:#e4ecf8;border-radius:8px;padding:1rem;flex:1;min-width:120px">
+                <div style="font-size:12px;color:#0E1F5A;opacity:0.6;margin-bottom:4px">Egypte (Nijl)</div>
+                <div style="font-size:22px;font-weight:700;color:#0E1F5A" id="val-eg">–</div>
+                <div style="font-size:11px;color:#0E1F5A;opacity:0.5;margin-top:2px">mm na 50 jaar</div>
+            </div>
+        </div>
+
+        <!-- Legenda -->
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px">
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#0E1F5A;opacity:0.7">
+                <span style="width:20px;height:2px;border-top:2px dashed #185FA5;display:inline-block"></span>Zeespiegelstijging
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#0E1F5A;opacity:0.7">
+                <span style="width:20px;height:2px;background:#0C447C;display:inline-block"></span>Totaal NL (RMS)
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#0E1F5A;opacity:0.7">
+                <span style="width:20px;height:2px;background:#D85A30;display:inline-block"></span>Totaal Vietnam (Mekong)
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#0E1F5A;opacity:0.7">
+                <span style="width:20px;height:2px;background:#0F6E56;display:inline-block"></span>Totaal Egypte (Nijl)
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+            <label style="font-size:13px;color:#0E1F5A;white-space:nowrap;font-weight:400">Zeespiegel (mm/jaar)</label>
+            <input type="range" id="sealevel" min="2" max="4" step="0.1" value="3" style="flex:1">
+            <span id="sealevel-out" style="font-size:13px;font-weight:700;color:#0E1F5A;min-width:32px">3.0</span>
+        </div>
+
+        <!-- Grafiek -->
+        <div style="position:relative;width:100%;height:320px">
+            <canvas id="grafiek"></canvas>
+        </div>
+
+        <p style="font-size:11px;color:#0E1F5A;opacity:0.5;margin-top:12px;font-weight:400;line-height:1.6">
+            Cumulatieve relatieve stijging = zeespiegelstijging + bodemdaling. Bodemdaling: Nederland 3 mm/jaar, Vietnam 10 mm/jaar, Egypte 4 mm/jaar.
+        </p>
+
+    </div>
+</section>
+
+    <!-- ── Rijn-Maas-Schelde ── -->
+    <section id="sec-rms" class="hp-section kr-sectie">
+        <h2 class="hp-section-title">Rijn-Maas-Schelde</h2>
+        <div class="kr-tekst">
+            <p>De Rijn-Maas-Schelde delta is een van de meest verstedelijkte en economisch belangrijke delta's in Europa. Tegelijkertijd is het gebied bijzonder kwetsbaar voor klimaatverandering doordat grote delen van Nederland onder of net boven zeeniveau liggen. Ongeveer 26% van het landoppervlak ligt onder zeeniveau en ongeveer 60% van het land is gevoelig voor overstromingen vanuit zee, rivieren of meren (Haasnoot et al., 2024).</p>
+
+            <h3 class="kr-subtitel">Zeespiegelstijging</h3>
+            <p>Een van de belangrijkste klimaatrisico's in deze delta is zeespiegelstijging. Wereldwijd stijgt de zeespiegel door de opwarming van de aarde en het smelten van gletsjers en ijskappen. Langs de Nederlandse kust wordt eveneens een versnelling van deze stijging waargenomen. Projecties suggereren dat de zeespiegel mogelijk enkele meters kan stijgen in de komende eeuwen, afhankelijk van het mondiale emissiescenario (Haasnoot et al., 2024).</p>
+
+            <h3 class="kr-subtitel">Verzilting</h3>
+            <p>Naast zeespiegelstijging vormt ook verzilting een groot risico. Wanneer de zeespiegel stijgt, kan zout zeewater verder landinwaarts doordringen via rivieren en grondwater. Dit kan de beschikbaarheid van zoet water verminderen en negatieve gevolgen hebben voor landbouw, drinkwatervoorziening en ecosystemen. In de Rijn-Maas-Schelde delta is een groot deel van het waterbeheer gericht op het voorkomen van zoutwaterintrusie en het veiligstellen van zoetwaterreserves (Delta Programme, 2023).</p>
+
+            <h3 class="kr-subtitel">Extreme rivierafvoeren</h3>
+            <p>Daarnaast kunnen extreme rivierafvoeren toenemen door klimaatverandering. Intensere neerslag in het stroomgebied van de Rijn en Maas kan leiden tot hogere piekafvoeren en daarmee een groter risico op overstromingen. Tegelijkertijd kunnen langere droge periodes juist leiden tot watertekorten. Hierdoor ontstaat een complex waterbeheerprobleem waarin zowel waterveiligheid als zoetwaterbeschikbaarheid centraal staan (PBL, 2012).</p>
         </div>
     </section>
 
-    <section class="delta-section">
-        <h2>Nijl Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Nijl delta</p>
-            <!-- Voeg hier je content toe -->
+    <!-- ── Mekong ── -->
+    <section id="sec-mekong" class="hp-section kr-sectie">
+        <h2 class="hp-section-title">Mekong</h2>
+        <div class="kr-tekst">
+            <p>De Mekongdelta behoort tot de grootste en meest productieve delta's ter wereld en speelt een cruciale rol in de voedselvoorziening van Zuidoost-Azië. Tegelijkertijd wordt de delta beschouwd als een van de meest kwetsbare gebieden voor klimaatverandering.</p>
+
+            <h3 class="kr-subtitel">Zoutwaterintrusie</h3>
+            <p>Een belangrijk klimaatrisico is zoutwaterintrusie. Door zeespiegelstijging, veranderende rivierafvoeren en droogte kan zout water vanuit de zee verder landinwaarts doordringen. Tijdens extreme droogteperioden kan het zout water tientallen kilometers landinwaarts trekken, wat grote schade kan veroorzaken aan landbouw en drinkwaterbronnen. Tijdens de droge periode van 2015–2016 leidde dit tot ernstige oogstverliezen en watertekorten voor honderdduizenden huishoudens (Smajgl et al., 2015; Nguyen, 2017).</p>
+
+            <h3 class="kr-subtitel">Bodemdaling</h3>
+            <p>Een tweede belangrijk risico is bodemdaling. Door intensieve grondwaterwinning en sedimenttekorten zakt het landoppervlak in delen van de delta met enkele centimeters per jaar. Dit proces kan sneller verlopen dan de stijging van de zeespiegel en vergroot daardoor het risico op overstromingen en landverlies (Eslami et al., 2021).</p>
+
+            <h3 class="kr-subtitel">Sedimentverlies</h3>
+            <p>Daarnaast speelt sedimentverlies een grote rol in de kwetsbaarheid van de delta. Door de bouw van dammen stroomopwaarts in de Mekong wordt minder sediment naar de delta vervoerd. Hierdoor neemt kusterosie toe en wordt de delta minder goed aangevuld met nieuw sediment. Dit maakt het landschap gevoeliger voor erosie en overstromingen (Eslami et al., 2021).</p>
+
+            <p>Door de combinatie van deze factoren – zeespiegelstijging, bodemdaling en sedimentverlies – bestaat het risico dat een groot deel van de Mekongdelta in de toekomst onder zeeniveau komt te liggen en miljoenen mensen moeten verhuizen (Dialogue Earth, 2025).</p>
         </div>
     </section>
 
-    <section class="delta-section">
-        <h2>Mekong Delta</h2>
-        <div class="delta-content">
-            <p>Informatie over de Mekong delta</p>
-            <!-- Voeg hier je content toe -->
+    <!-- ── Nijl ── -->
+    <section id="sec-nijl" class="hp-section kr-sectie">
+        <h2 class="hp-section-title">Nijl</h2>
+        <div class="kr-tekst">
+            <p>De Nijldelta is een van de dichtstbevolkte delta's ter wereld en vormt het agrarische hart van Egypte. Ongeveer een groot deel van de Egyptische bevolking woont in dit gebied, dat sterk afhankelijk is van de rivier Nijl.</p>
+
+            <h3 class="kr-subtitel">Zeespiegelstijging en kustlandverlies</h3>
+            <p>Een van de grootste klimaatrisico's in de Nijldelta is zeespiegelstijging. Studies tonen aan dat tussen 22% en 49% van het kustgebied van de delta tegen het einde van deze eeuw verloren kan gaan door overstromingen en erosie als er geen beschermende maatregelen worden genomen (Hassaan &amp; Abdrabo, 2016).</p>
+
+            <h3 class="kr-subtitel">Bodemdaling</h3>
+            <p>Ook bodemdaling speelt een belangrijke rol in het vergroten van overstromingsrisico's. Zelfs zonder zeespiegelstijging kan ongeveer 16% van het kustgebied verdwijnen door natuurlijke en door de mens veroorzaakte bodemdaling (Hassaan &amp; Abdrabo, 2016).</p>
+
+            <h3 class="kr-subtitel">Verzilting en hitte</h3>
+            <p>Een ander belangrijk risico is verzilting van landbouwgrond en grondwater. Door zeespiegelstijging en verminderde rivierafvoer kan zout water dieper het land binnendringen. Dit kan landbouwproductie verminderen en ecosystemen aantasten. Aangezien de Nijldelta een cruciale rol speelt in de voedselproductie van Egypte, kan deze verzilting grote economische en sociale gevolgen hebben (Taha et al., 2023).</p>
+
+            <p>Daarnaast kunnen hogere temperaturen en veranderende neerslagpatronen leiden tot meer extreme weersomstandigheden, zoals hittegolven en droogte. Deze factoren vergroten de druk op de water- en voedselvoorziening in de regio.</p>
         </div>
     </section>
+
 </main>
 
 <footer>
-    © 2026 DRIP
-    <li><a href="contact.html">Contact</a></li>
+    <p>© 2026 DRIP</p>
+    <a href="contact.html">Contact</a>
 </footer>
 
-<script src="../js/script.js"></script>
+<script src="../js/projecten.js"></script>
+
+<style>
+    .kr-sectie {
+        border-bottom: 1px solid rgba(14, 31, 90, 0.1);
+        padding-bottom: 3rem;
+    }
+
+    .kr-tekst {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .kr-tekst p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #444;
+        line-height: 1.85;
+        margin-bottom: 1.25rem;
+    }
+
+    .kr-subtitel {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0E1F5A;
+        margin: 2rem 0 0.6rem;
+    }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+(function() {
+    const jaren = Array.from({length: 51}, function(_,i){ return i; });
+    const bodem = { nl: 3, vn: 10, eg: 4 };
+
+    function bereken(zee) {
+        return {
+            zee: jaren.map(function(j){ return Math.round(j * zee); }),
+            nl:  jaren.map(function(j){ return Math.round(j * (zee + bodem.nl)); }),
+            vn:  jaren.map(function(j){ return Math.round(j * (zee + bodem.vn)); }),
+            eg:  jaren.map(function(j){ return Math.round(j * (zee + bodem.eg)); })
+        };
+    }
+
+    var slider = document.getElementById('sealevel');
+    var sliderOut = document.getElementById('sealevel-out');
+
+    var ctx = document.getElementById('grafiek').getContext('2d');
+    var grafiek = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: jaren,
+            datasets: [
+                { label: 'Zeespiegelstijging (wereldwijd)', data: [], borderColor: '#185FA5', borderWidth: 2, borderDash: [6,3], pointRadius: 0, fill: false },
+                { label: 'Totaal NL (RMS)',                 data: [], borderColor: '#0C447C', borderWidth: 2.5, pointRadius: 0, fill: false },
+                { label: 'Totaal Vietnam (Mekong)',         data: [], borderColor: '#D85A30', borderWidth: 2.5, pointRadius: 0, fill: false },
+                { label: 'Totaal Egypte (Nijl)',            data: [], borderColor: '#0F6E56', borderWidth: 2.5, pointRadius: 0, fill: false }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function(ctx) { return ctx.dataset.label + ': ' + ctx.parsed.y + ' mm'; }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    title: { display: true, text: 'Jaar', color: '#888', font: { size: 12 } },
+                    ticks: { autoSkip: true, maxTicksLimit: 11, color: '#888' },
+                    grid: { color: 'rgba(0,0,0,0.06)' }
+                },
+                y: {
+                    title: { display: true, text: 'Cumulatieve stijging (mm)', color: '#888', font: { size: 12 } },
+                    ticks: { color: '#888' },
+                    grid: { color: 'rgba(0,0,0,0.06)' }
+                }
+            }
+        }
+    });
+
+    function update() {
+        var zee = parseFloat(slider.value);
+        sliderOut.textContent = zee.toFixed(1);
+        var d = bereken(zee);
+        grafiek.data.datasets[0].data = d.zee;
+        grafiek.data.datasets[1].data = d.nl;
+        grafiek.data.datasets[2].data = d.vn;
+        grafiek.data.datasets[3].data = d.eg;
+        grafiek.update();
+        document.getElementById('val-nl').textContent = d.nl[50] + ' mm';
+        document.getElementById('val-vn').textContent = d.vn[50] + ' mm';
+        document.getElementById('val-eg').textContent = d.eg[50] + ' mm';
+    }
+
+    slider.addEventListener('input', update);
+    update();
+})();
+</script>
+
 </body>
 </html>
