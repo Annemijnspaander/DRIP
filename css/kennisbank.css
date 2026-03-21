@@ -220,11 +220,13 @@
 .tag-nijl    { background: #cce4ff; color: #0a3370; }
 .tag-mekong  { background: #c8f0e0; color: #0a4d30; }
 .tag-rms     { background: #ffe0cc; color: #5c2200; }
+.tag-algemeen{ background: #ede9fe; color: #3c1a8a; }
 
 /* Tagkleuren op hover (witte kaart → donker) */
 .artikel-kaart:hover .tag-nijl   { background: rgba(255,255,255,0.25); color: white; }
 .artikel-kaart:hover .tag-mekong { background: rgba(255,255,255,0.25); color: white; }
 .artikel-kaart:hover .tag-rms    { background: rgba(255,255,255,0.25); color: white; }
+.artikel-kaart:hover .tag-algemeen{ background: rgba(255,255,255,0.25); color: white; }
 
 /* Artikel titel */
 .artikel-titel {
