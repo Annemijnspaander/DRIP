@@ -217,9 +217,9 @@
     transition: background 0.22s, color 0.22s;
 }
 
-.tag-nijl    { background: #cce4ff; color: #0a3370; }
+.tag-rms    { background: #cce4ff; color: #0a3370; }
 .tag-mekong  { background: #c8f0e0; color: #0a4d30; }
-.tag-rms     { background: #ffe0cc; color: #5c2200; }
+.tag-nijl     { background: #ffe0cc; color: #5c2200; }
 .tag-algemeen{ background: #ede9fe; color: #3c1a8a; }
 
 /* Tagkleuren op hover (witte kaart → donker) */
@@ -295,4 +295,74 @@
         border-radius: 30px;
         flex: 1;
     }
+}
+
+/* ── Intro tekst ── */
+.kb-intro {
+    max-width: 680px;
+    margin: 0 auto 36px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.kb-intro p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--blue);
+    line-height: 1.75;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.kb-intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* ── Bijdrage banner ── */
+.kb-bijdrage-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 680px;
+    margin: 0 auto 40px;
+    padding: 24px 28px;
+    background: var(--blue);
+    border-radius: 16px;
+    flex-wrap: wrap;
+}
+
+.kb-bijdrage-tekst h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 6px;
+}
+
+.kb-bijdrage-tekst p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.kb-bijdrage-knop {
+    display: inline-block;
+    padding: 11px 22px;
+    background: white;
+    color: var(--blue);
+    font-family: "ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.2s, color 0.2s;
+}
+
+.kb-bijdrage-knop:hover {
+    background: var(--light);
+    color: var(--blue);
 }

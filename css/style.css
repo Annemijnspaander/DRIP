@@ -575,3 +575,40 @@ a{
     line-height: 1.6;
     opacity: 0.75;
 }
+/* ── Fotocredits ── */
+.hero-img-wrap {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+}
+
+.hero-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.delta-luchtfoto-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.foto-credit {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    z-index: 20;
+    pointer-events: none;
+    font-family: "ubuntu", sans-serif;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.foto-credit--lucht {
+    bottom: auto;
+    top: 8px;
+    right: 10px;
+}
