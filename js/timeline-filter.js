@@ -44,3 +44,18 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 })
+document.addEventListener("DOMContentLoaded", () => {
+    const timeline = document.querySelector(".timeline-shell");
+    if (!timeline) return;
+
+    function updateTimelineCompact() {
+        if (window.scrollY > 220) {
+            timeline.classList.add("is-compact");
+        } else {
+            timeline.classList.remove("is-compact");
+        }
+    }
+
+    window.addEventListener("scroll", updateTimelineCompact);
+    updateTimelineCompact();
+});

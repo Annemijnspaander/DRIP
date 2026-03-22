@@ -114,13 +114,14 @@ header{
 }
 
 .hero-overlay h1{
-    font: size 100px;
+    font-size:  80px;
     margin:0;
     text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
 }
 
 .hero-overlay p{
-    font-size:50px;
+    font-size:30px;
+    font-weight: 300;
     line-height:1.6;
     text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
 }

@@ -130,3 +130,92 @@
         height: 340px;
     }
 }
+/* =========================
+   PROJECTEN STIJL VOOR GEOPOLITIEK
+========================= */
+
+.geo-page-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.hydro-section {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.hydro-section h2 {
+    font-family: "ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2e3d6b;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.hydro-section h3 {
+    font-family: "ubuntu", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hydro-section p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.75;
+}
+.map-card {
+    background: #e4ecf8;
+    border: 4px solid #0E1F5A;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.map-card h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: .5rem;
+}
+
+.leaflet-map {
+    width: 100%;
+    height: 420px;
+    border-radius: 8px;
+    background: #e6e8eb;
+}
+.intro-note {
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.75;
+    text-align: left;
+}
+.hp-header {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 2rem 1rem;
+  background: var(--light);
+  z-index: 1190;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+ header {
+    z-index: 1200;
+}
+
+.hp-header {
+    z-index: 1100;
+}
+
+.menu {
+    z-index: 9999;
+}
