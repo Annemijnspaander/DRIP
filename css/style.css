@@ -87,6 +87,24 @@ header{
     font-size: 16px;
 }
 
+.menu-sluit {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.menu-sluit:hover {
+    opacity: 1;
+}
 .hero{
     position:relative;
     height:100vh;

@@ -5,6 +5,10 @@ const overlay = document.getElementById("overlay");
 function toggleMenu() {
     menu.classList.toggle("active");
     overlay.classList.toggle("active");
+
+const menuSluit = document.getElementById("menuSluit");
+if (menuSluit) menuSluit.addEventListener("click", closeMenu);
+
 }
 function closeMenu() {
     menu.classList.remove("active");
