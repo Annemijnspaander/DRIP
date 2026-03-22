@@ -342,7 +342,9 @@ a {
   transition: transform 0.3s;
 }
  
-.hp-card.open .hp-lees-meer .arrow {
+.hp-card.open .hp-lees-meer .arrow,
+.hp-cardM.open .hp-lees-meer .arrow,
+.hp-cardN.open .hp-lees-meer .arrow {
   transform: rotate(90deg);
 }
  
@@ -380,7 +382,9 @@ a {
   border-top: 0.5px solid transparent;
 }
  
-.hp-card.open .hp-article {
+.hp-card.open .hp-article,
+.hp-cardM.open .hp-article,
+.hp-cardN.open .hp-article {
   max-height: 1000px;
   border-top-color: rgba(0, 0, 0, 0.1);
 }
