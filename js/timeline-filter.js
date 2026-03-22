@@ -1,74 +1,46 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const buttons = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.event-card[data-delta]');
-    const details = document.querySelectorAll('.detail-block[data-delta]');
+    const buttons = document.querySelectorAll(".legend button")
+    const cards = document.querySelectorAll(".event-card")
+    const blocks = document.querySelectorAll(".detail-block")
 
-    const activeFilters = new Set(['rms','nile','mekong']);
+    buttons.forEach(btn => {
 
-    function updateView() {
+        btn.addEventListener("click", () => {
 
-        cards.forEach(card => {
+            const filter = btn.dataset.filter
 
-            const delta = card.dataset.delta;
+            buttons.forEach(b => b.classList.remove("active"))
+            btn.classList.add("active")
 
-            if(activeFilters.has(delta)) {
-                card.classList.remove('is-hidden');
-            } else {
-                card.classList.add('is-hidden');
-            }
+            cards.forEach(card => {
 
-        });
-
-        details.forEach(detail => {
-
-            const delta = detail.dataset.delta;
-
-            if(activeFilters.has(delta)) {
-                detail.classList.remove('is-hidden');
-            } else {
-                detail.classList.add('is-hidden');
-            }
-
-        });
-
-    }
-
-    buttons.forEach(button => {
-
-        button.addEventListener('click', () => {
-
-            const filter = button.dataset.filter;
-
-            if(filter === "all") {
-
-                activeFilters.clear();
-                activeFilters.add("rms");
-                activeFilters.add("nile");
-                activeFilters.add("mekong");
-
-                updateView();
-                return;
-            }
-
-            if(activeFilters.has(filter)) {
-
-                if(activeFilters.size > 1) {
-                    activeFilters.delete(filter);
+                if (
+                    filter === "all" ||
+                    card.dataset.delta === filter
+                ) {
+                    card.style.display = ""
+                } else {
+                    card.style.display = "none"
                 }
 
-            } else {
+            })
 
-                activeFilters.add(filter);
+            blocks.forEach(block => {
 
-            }
+                if (
+                    filter === "all" ||
+                    block.dataset.delta === filter
+                ) {
+                    block.style.display = ""
+                } else {
+                    block.style.display = "none"
+                }
 
-            updateView();
+            })
 
-        });
+        })
 
-    });
+    })
 
-    updateView();
-
-});
+})

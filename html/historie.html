@@ -15,7 +15,7 @@
 <div id="overlay"></div>
 <div class="nav">
 <div class="logo">
-<img alt="DRIP logo" src="img/HWUD01_Logo.png"/>
+     <img src="../img/HWUD01_Logo.png" alt="DRIP logo">
 </div>
 <div class="burger" id="burger">☰</div>
 </div>
@@ -46,7 +46,15 @@
 </div>
 </section>
 <div class="page-wrap">
-<section class="intro-note"><strong>Leeswijzer</strong><br/>Bovenaan staat een scrollbare tijdlijn met geselecteerde omslagpunten in drie delta’s. Onder de tijdlijn volgt per gebeurtenis een korte toelichting met nadruk op waterbeheer, ruimtelijke keuzes en institutionele gevolgen.<div class="legend"><span><i class="dot dot-rms"></i> Rijn-Maas-Schelde-delta</span><span><i class="dot dot-nile"></i> Nijl-delta</span><span><i class="dot dot-mekong"></i> Mekong-delta</span></div></section>
+<section class="intro-note"><strong>Leeswijzer</strong><br/>Bovenaan staat een scrollbare tijdlijn met
+     geselecteerde omslagpunten in drie delta’s. Onder de tijdlijn volgt per gebeurtenis een korte 
+     toelichting met nadruk op waterbeheer, ruimtelijke keuzes en institutionele gevolgen.
+     <div class="legend">
+    <button class="legend-all active" data-filter="all">Alles</button>
+    <button class="legend-rms" data-filter="rms">Rijn-Maas-Schelde</button>
+    <button class="legend-nijl" data-filter="nile">Nijl</button>
+    <button class="legend-mekong" data-filter="mekong">Mekong</button>
+</div>
 <section aria-labelledby="timeline-title" class="timeline-shell">
 <div class="timeline-heading">
 <div>
@@ -375,6 +383,7 @@
     © 2026 DRIP · <a href="contact.html">Contact</a>
 </footer>
 <script src="../js/script.js"></script>
+<script src="../js/timeline-filter.js"></script>
 <script>
     document.querySelectorAll('.event-card').forEach(card => {
         card.addEventListener('click', () => {
