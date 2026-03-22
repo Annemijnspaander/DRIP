@@ -4,465 +4,377 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historische gebeurtenissen | DRIP</title>
-    <link rel="stylesheet" href="../css/tijdlijn.css">
     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/tijdlijn.css">
     <link rel="icon" type="image/png" href="img/HWUD01_logo_donker_omleind.png">
 
 </head>
-<body>
-
+/head>
+<body class="historie-page">
 <header id="top">
-    <div id="overlay"></div>
-    <div class="nav">
-        <div class="logo">
-            <img src="img/HWUD01_Logo.png" alt="DRIP logo">
-        </div>
-        <div class="burger" id="burger">☰</div>
-    </div>
-
-    <nav class="menu" id="menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="overdrip.html">Over DRIP</a></li>
-            <li>
+<div id="overlay"></div>
+<div class="nav">
+<div class="logo">
+<img alt="DRIP logo" src="img/HWUD01_Logo.png"/>
+</div>
+<div class="burger" id="burger">☰</div>
+</div>
+<nav class="menu" id="menu">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="overdrip.html">Over DRIP</a></li>
+<li>
                 Thema's
                 <ul>
-                    <li><a href="historie.html">Historische gebeurtenissen</a></li>
-                    <li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
-                    <li><a href="projecten.html">Huidige projecten</a></li>
-                    <li><a href="watergebruik.html">Watergebruik en governance</a></li>
-                    <li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
-                    <li><a href="kennisbank.html">Kennisbank</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<li><a href="historie.html">Historische gebeurtenissen</a></li>
+<li><a href="geopolitiek.html">Hydro-politieke relaties</a></li>
+<li><a href="projecten.html">Huidige projecten</a></li>
+<li><a href="watergebruik.html">Watergebruik en governance</a></li>
+<li><a href="klimaatrisico.html">Klimaatrisico's</a></li>
+<li><a href="kennisbank.html">Kennisbank</a></li>
+</ul>
+</li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 </header>
-
 <main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Historische gebeurtenissen in drie delta's</h1>
-            <p>
-                Deze tijdlijn vergelijkt de Rijn-Maas-Schelde-delta, de Nijl-delta en de Mekong-delta.
-                De opzet is gericht op veiligheidsplanners die willen zien welke ingrepen, rampen en
-                historische omslagpunten de weerbaarheid van andere delta's hebben veranderd.
-            </p>
-        </div>
-    </section>
+<section class="hero">
+<div class="hero-content">
+<h1>Historische gebeurtenissen in drie delta's</h1>
+<p>Deze tijdlijn vergelijkt de Rijn-Maas-Schelde-delta, de Nijl-delta en de Mekong-delta vanuit waterveiligheid, governance en ruimtelijke inrichting. De selectie richt zich op gebeurtenissen die de institutionele logica van deltabeheer veranderden en daardoor relevant zijn voor beleidsmakers en veiligheidsplanners.</p>
+</div>
+</section>
+<div class="page-wrap">
+<section class="intro-note"><strong>Leeswijzer</strong><br/>Bovenaan staat een scrollbare tijdlijn met geselecteerde omslagpunten in drie delta’s. Onder de tijdlijn volgt per gebeurtenis een korte toelichting met nadruk op waterbeheer, ruimtelijke keuzes en institutionele gevolgen.<div class="legend"><span><i class="dot dot-rms"></i> Rijn-Maas-Schelde-delta</span><span><i class="dot dot-nile"></i> Nijl-delta</span><span><i class="dot dot-mekong"></i> Mekong-delta</span></div></section>
+<section aria-labelledby="timeline-title" class="timeline-shell">
+<div class="timeline-heading">
+<div>
+<h2 id="timeline-title">Scrollbare tijdlijn</h2>
+<p class="timeline-help">Klik op een gebeurtenis om direct naar de bijbehorende analyse te gaan.</p>
+</div>
+</div>
+<div class="timeline-scroll">
+<div class="timeline-track">
+<a class="event-card delta-nile tone-1 stagger-top" data-delta="nile" href="#evt-nile-5000">
+<span class="event-year">ca. 5000 v.Chr.</span>
+<h3>Vroege bewoning in de Nijl-delta</h3>
+<p>De sedimentrijke delta vormt een vroeg agrarisch en logistiek kerngebied.</p>
+<span class="tag">Nijl-delta</span>
+</a>
+<a class="event-card delta-nile tone-2 stagger-bottom" data-delta="nile" href="#evt-nile-3100">
+<span class="event-year">ca. 3100 v.Chr.</span>
+<h3>Onder-Egypte in de eenwording van Egypte</h3>
+<p>Onder-Egypte wordt een structureel onderdeel van staatsvorming en voedselvoorziening.</p>
+<span class="tag">Nijl-delta</span>
+</a>
+<a class="event-card delta-nile tone-3 stagger-top" data-delta="nile" href="#evt-nile-331">
+<span class="event-year">331 v.Chr.</span>
+<h3>Stichting van Alexandrië</h3>
+<p>Alexandrië versterkt de maritieme en bestuurlijke betekenis van de delta.</p>
+<span class="tag">Nijl-delta</span>
+</a>
+<a class="event-card delta-rms tone-1 stagger-bottom" data-delta="rms" href="#evt-rms-1250">
+<span class="event-year">1250-2000</span>
+<h3>Groei van polders in de Nederlandse delta</h3>
+<p>Bedijking en inpoldering veranderen het deltalandschap stap voor stap.</p>
+<span class="tag">Rijn-Maas-Schelde-delta</span>
+</a>
+<a class="event-card delta-mekong tone-1 stagger-top" data-delta="mekong" href="#evt-mekong-1st">
+<span class="event-year">1e-6e eeuw</span>
+<h3>Handels- en kanaalnetwerken in de Mekong-delta</h3>
+<p>Kanaalnetwerken verbinden landbouw, handel en waterbeheer.</p>
+<span class="tag">Mekong-delta</span>
+</a>
+<a class="event-card delta-rms tone-2 stagger-bottom" data-delta="rms" href="#evt-rms-1798">
+<span class="event-year">1798</span>
+<h3>Oprichting van Rijkswaterstaat</h3>
+<p>Waterbeheer verschuift naar een sterkere rol van de nationale staat.</p>
+<span class="tag">Rijn-Maas-Schelde-delta</span>
+</a>
+<a class="event-card delta-mekong tone-2 stagger-top" data-delta="mekong" href="#evt-mekong-17th">
+<span class="event-year">17e-18e eeuw</span>
+<h3>Zuidwaartse Vietnamese uitbreiding</h3>
+<p>Uitbreiding en ontginning vergroten de bestuurlijke greep op de delta.</p>
+<span class="tag">Mekong-delta</span>
+</a>
+<a class="event-card delta-rms tone-3 stagger-bottom" data-delta="rms" href="#evt-rms-1861">
+<span class="event-year">1861-1904</span>
+<h3>Nieuwe waterwerken in de delta</h3>
+<p>Nieuwe waterwegen herordenen afvoer, scheepvaart en veiligheid.</p>
+<span class="tag">Rijn-Maas-Schelde-delta</span>
+</a>
+<a class="event-card delta-mekong tone-3 stagger-top" data-delta="mekong" href="#evt-mekong-1880">
+<span class="event-year">1880-1930</span>
+<h3>Koloniale irrigatie en rijstexpansie</h3>
+<p>Koloniale irrigatie koppelt productiestijging aan systeemingrepen.</p>
+<span class="tag">Mekong-delta</span>
+</a>
+<a class="event-card delta-nile tone-4 stagger-bottom" data-delta="nile" href="#evt-nile-1902">
+<span class="event-year">1902</span>
+<h3>Eerste Aswandam</h3>
+<p>De eerste Aswandam verandert de regulering van water en sediment.</p>
+<span class="tag">Nijl-delta</span>
+</a>
+<a class="event-card delta-rms tone-4 stagger-top" data-delta="rms" href="#evt-rms-1916">
+<span class="event-year">1916</span>
+<h3>Overstroming in Noord-Holland</h3>
+<p>De overstroming maakt nationale herinrichting politiek urgent.</p>
+<span class="tag">Rijn-Maas-Schelde-delta</span>
+</a>
+<a class="event-card delta-rms tone-5 stagger-bottom" data-delta="rms" href="#evt-rms-1927">
+<span class="event-year">1927-1932</span>
+<h3>Bouw van de Afsluitdijk</h3>
+<p>De Afsluitdijk verkort de kustlijn en centraliseert bescherming.</p>
+<span class="tag">Rijn-Maas-Schelde-delta</span>
+</a>
+<a class="event-card delta-rms tone-6 stagger-top" data-delta="rms" href="#evt-rms-1953">
+<span class="event-year">1953</span>
+<h3>Watersnoodramp</h3>
+<p>De ramp van 1953 legitimeert een nieuw veiligheidsregime.</p>
+<span class="tag">Rijn-Maas-Schelde-delta</span>
+</a>
+<a class="event-card delta-mekong tone-4 stagger-bottom" data-delta="mekong" href="#evt-mekong-1960">
+<span class="event-year">1960s</span>
+<h3>Eerste modernistische ontwikkelplannen</h3>
+<p>Ontwikkelplannen vertalen de delta naar een technisch planobject.</p>
+<span class="tag">Mekong-delta</span>
+</a>
+<a class="event-card delta-nile tone-5 stagger-top" data-delta="nile" href="#evt-nile-1959">
+<span class="event-year">1959-1970</span>
+<h3>Bouw van de Aswan High Dam</h3>
+<p>De Aswan High Dam vergroot controle maar verlaagt sedimenttoevoer.</p>
+<span class="tag">Nijl-delta</span>
+</a>
+<a class="event-card delta-rms tone-7 stagger-bottom" data-delta="rms" href="#evt-rms-1954">
+<span class="event-year">1954-1997</span>
+<h3>Deltawerken</h3>
+<p>De Deltawerken vormen het paradigma van grootschalige deltabeveiliging.</p>
+<span class="tag">Rijn-Maas-Schelde-delta</span>
+</a>
+<a class="event-card delta-mekong tone-5 stagger-top" data-delta="mekong" href="#evt-mekong-1986">
+<span class="event-year">vanaf 1986</span>
+<h3>Đổi Mới en snelle verstedelijking</h3>
+<p>Economische liberalisering versnelt druk op water en ruimte.</p>
+<span class="tag">Mekong-delta</span>
+</a>
+<a class="event-card delta-mekong tone-6 stagger-bottom" data-delta="mekong" href="#evt-mekong-1990">
+<span class="event-year">1990s</span>
+<h3>Grootschalige watercontrolesystemen</h3>
+<p>Watercontrolesystemen verhogen productie maar beperken adaptieve dynamiek.</p>
+<span class="tag">Mekong-delta</span>
+</a>
+<a class="event-card delta-rms tone-8 stagger-top" data-delta="rms" href="#evt-rms-2005">
+<span class="event-year">2005-2015</span>
+<h3>Ruimte voor de Rivier</h3>
+<p>Ruimte voor de Rivier verschuift beleid van afsluiten naar meebewegen.</p>
+<span class="tag">Rijn-Maas-Schelde-delta</span>
+</a>
+</div>
+</div>
+</section>
+<section class="details-heading">
+<h2>Uitgebreide toelichting</h2>
+</section>
+<section class="details-grid">
+<article class="detail-block delta-nile tone-1 stagger-top" data-delta="nile" id="evt-nile-5000">
+<div class="detail-meta">
+<span class="detail-year">ca. 5000 v.Chr.</span>
+<span class="detail-delta">Nijl-delta</span>
+</div>
+<h3>Vroege bewoning in de Nijl-delta</h3><p>De vroege bewoning van de Nijl-delta hangt samen met langdurige sedimentatie, waardoor een vruchtbaar en relatief goed bereikbaar landschap ontstond. In historische en fysisch-geografische reconstructies geldt deze fase als de basis voor een duurzaam samenspel tussen landbouw, nederzettingen en watergebonden transport (Encyclopaedia Britannica, n.d.-a).</p><p>Voor beleidsmakers laat dit vroege stadium zien dat deltaveiligheid niet uitsluitend voortkomt uit technische infrastructuur, maar eerst uit de wisselwerking tussen natuurlijke afzetting, seizoensdynamiek en ruimtegebruik. De latere kwetsbaarheid van de Nijl-delta moet daarom mede worden begrepen vanuit het verlies van deze natuurlijke opbouwprocessen.</p>
 
-    <div class="page-wrap">
-        <section class="intro-note">
-            <strong>Opbouw van deze pagina</strong><br>
-            Bovenaan staat één brede, horizontale tijdlijn. Elke gebeurtenis heeft een eigen kleur.
-            Onder de tijdlijn staat per gebeurtenis een uitgebreider blok met jaartal, delta en toelichting.
-            De volgorde loopt van oud naar recent.
-            <div class="legend">
-                <span><i class="dot" style="background: var(--rms)"></i> Rijn-Maas-Schelde-delta</span>
-                <span><i class="dot" style="background: var(--nile)"></i> Nijl-delta</span>
-                <span><i class="dot" style="background: var(--mekong)"></i> Mekong-delta</span>
-            </div>
-        </section>
 
-        <section class="timeline-filters" aria-label="Filter gebeurtenissen">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="rms" type="button">Rijn-Maas-Schelde</button>
-                <button class="filter-btn active" data-filter="nile" type="button">Nijl</button>
-                <button class="filter-btn active" data-filter="mekong" type="button">Mekong</button>
-                <button class="filter-btn reset" data-filter="all" type="button">Alles tonen</button>
-            </div>
-        </section>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-nile tone-2 stagger-bottom" data-delta="nile" id="evt-nile-3100">
+<div class="detail-meta">
+<span class="detail-year">ca. 3100 v.Chr.</span>
+<span class="detail-delta">Nijl-delta</span>
+</div>
+<h3>Onder-Egypte in de eenwording van Egypte</h3><p>Rond de eenwording van Egypte werd de delta institutioneel verankerd als Onder-Egypte en daarmee onderdeel van een vroeg staatsvormend kerngebied. De delta functioneerde niet alleen als productief landbouwgebied, maar ook als strategische ruimte voor distributie, belastinginning en verbinding met de Middellandse Zee (Encyclopaedia Britannica, n.d.-a).</p><p>Veiligheidskundig markeert dit moment de koppeling tussen waterbeheer en staatsmacht. Vanaf dit punt is de delta niet alleen een fysisch systeem, maar ook een bestuurlijk systeem waarin controle over water samenvalt met controle over voedsel, bevolking en bereikbaarheid.</p>
 
-        <section class="timeline-shell" aria-labelledby="timeline-title">
-            <div class="timeline-heading">
-                <div>
-                    <h2 id="timeline-title">Scrollbare tijdlijn</h2>
-                    <p class="timeline-help">Klik op een box om direct naar de uitleg te gaan.</p>
-                </div>
-            </div>
 
-            <div class="timeline-scroll">
-                <div class="timeline-track">
-                    <a class="event-card" data-delta="nile" href="#evt-nile-5000" style="margin-top:0;">
-                        <span class="event-year" style="background:#fde7b2; color:#764400;">ca. 5000 v.Chr.</span>
-                        <h3>Vroege bewoning in de Nijl-delta</h3>
-                        <p>De vruchtbare, slibrijke delta trekt al vroeg landbouw en nederzettingen aan.</p>
-                        <span class="tag" style="color:var(--nile);">Nijl-delta</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-nile tone-3 stagger-top" data-delta="nile" id="evt-nile-331">
+<div class="detail-meta">
+<span class="detail-year">331 v.Chr.</span>
+<span class="detail-delta">Nijl-delta</span>
+</div>
+<h3>Stichting van Alexandrië</h3><p>Met de stichting van Alexandrië verschoof de westelijke rand van de Nijl-delta naar een positie van grote maritieme, bestuurlijke en intellectuele betekenis. De delta werd hierdoor sterker ingebed in mediterrane handelsstromen en in bovenregionale politieke netwerken (Encyclopaedia Britannica, n.d.-a).</p><p>Vanuit beleidsperspectief is dit een relevant omslagpunt omdat veiligheid vanaf dan ook afhankelijk wordt van haveninfrastructuur, stedelijke concentratie en internationale verbindingen. De bestuurlijke en economische waarde van de delta nam toe, maar daarmee ook de potentiële impact van verstoringen in toegang, afvoer en bescherming.</p>
 
-                    <a class="event-card" data-delta="nile" href="#evt-nile-3100" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#f9d27d; color:#6f3d00;">ca. 3100 v.Chr.</span>
-                        <h3>Onder-Egypte in de eenwording van Egypte</h3>
-                        <p>De delta wordt een kerngebied binnen de vorming van de Egyptische staat.</p>
-                        <span class="tag" style="color:var(--nile);">Nijl-delta</span>
-                    </a>
 
-                    <a class="event-card" data-delta="nile" href="#evt-nile-331" style="margin-top:0;">
-                        <span class="event-year" style="background:#f4c05c; color:#613500;">331 v.Chr.</span>
-                        <h3>Stichting van Alexandrië</h3>
-                        <p>De delta wordt nog sterker verbonden met handel, zeevaart en kennisuitwisseling.</p>
-                        <span class="tag" style="color:var(--nile);">Nijl-delta</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-rms tone-1 stagger-bottom" data-delta="rms" id="evt-rms-1250">
+<div class="detail-meta">
+<span class="detail-year">1250-2000</span>
+<span class="detail-delta">Rijn-Maas-Schelde-delta</span>
+</div>
+<h3>Groei van polders in de Nederlandse delta</h3><p>Tussen circa 1250 en 2000 veranderde de Rijn-Maas-Schelde-delta door bedijking, inpoldering en systematische landaanwinning in een steeds sterker ontworpen landschap. Deze lange ontwikkelingslijn laat zien dat de delta niet alleen door natuurlijke processen, maar vooral door opeenvolgende waterstaatkundige keuzes is gevormd (Meyer, Nijhuis, &amp; Broesi, 2014).</p><p>Voor beleidsmakers is dit van belang omdat veiligheid hier geleidelijk werd gekoppeld aan ruimtelijke fixatie: water werd begrensd, functies werden vastgelegd en risico’s werden verplaatst in plaats van weggenomen. Daarmee ontstond een deltasysteem dat hoge productiviteit combineert met structurele afhankelijkheid van beheer en onderhoud.</p>
 
-                    <a class="event-card" data-delta="rms" href="#evt-rms-1250" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#cfe6fb; color:#0d4a7b;">1250-2000</span>
-                        <h3>Groei van polders in de Nederlandse delta</h3>
-                        <p>Inpoldering en bedijking veranderen het water-landpatroon stap voor stap.</p>
-                        <span class="tag" style="color:var(--rms);">Rijn-Maas-Schelde</span>
-                    </a>
 
-                    <a class="event-card" data-delta="mekong" href="#evt-mekong-1st" style="margin-top:0;">
-                        <span class="event-year" style="background:#ccefe8; color:#0a5e4d;">1e-6e eeuw</span>
-                        <h3>Handels- en kanaalnetwerken in de Mekong-delta</h3>
-                        <p>Vroege deltanederzettingen groeien dankzij handel, waterwegen en natte rijstbouw.</p>
-                        <span class="tag" style="color:var(--mekong);">Mekong-delta</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-mekong tone-1 stagger-top" data-delta="mekong" id="evt-mekong-1st">
+<div class="detail-meta">
+<span class="detail-year">1e-6e eeuw</span>
+<span class="detail-delta">Mekong-delta</span>
+</div>
+<h3>Vroege handels- en kanaalnetwerken in de Mekong-delta</h3><p>In de vroege eeuwen van onze jaartelling ontwikkelde de Mekong-delta zich als een netwerk van nederzettingen, kanalen en watergebonden handelsroutes. De organisatie van ruimte en economie was hierbij afgestemd op seizoenswater, periodieke overstromingen en natte rijstbouw (Marchand, Pham, &amp; Le, 2014).</p><p>Dit is beleidsmatig relevant omdat het laat zien dat adaptatie in de Mekong-delta aanvankelijk niet gebaseerd was op volledige uitsluiting van water, maar op meebewegen met hydrologische variatie. Latere technocratische ingrepen moeten daarom worden gelezen tegen deze langere traditie van flexibel deltagebruik.</p>
 
-                    <a class="event-card" data-delta="rms" href="#evt-rms-1798" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#acd5f9; color:#0b4574;">1798</span>
-                        <h3>Oprichting van Rijkswaterstaat</h3>
-                        <p>De nationale staat krijgt een sterkere rol in waterbeheer en rivieringrepen.</p>
-                        <span class="tag" style="color:var(--rms);">Rijn-Maas-Schelde</span>
-                    </a>
 
-                    <a class="event-card" data-delta="mekong" href="#evt-mekong-17th" style="margin-top:0;">
-                        <span class="event-year" style="background:#9ae4d4; color:#075645;">17e-18e eeuw</span>
-                        <h3>Zuidwaartse Vietnamese uitbreiding</h3>
-                        <p>De delta wordt intensiever ontgonnen en bewoond, met meer kanalen en landbouw.</p>
-                        <span class="tag" style="color:var(--mekong);">Mekong-delta</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-rms tone-2 stagger-bottom" data-delta="rms" id="evt-rms-1798">
+<div class="detail-meta">
+<span class="detail-year">1798</span>
+<span class="detail-delta">Rijn-Maas-Schelde-delta</span>
+</div>
+<h3>Oprichting van Rijkswaterstaat</h3><p>Met de oprichting van Rijkswaterstaat kreeg de nationale overheid een structurelere rol in het beheer van rivieren, zeearmen en waterkeringen. In de Nederlandse delta markeert dit de overgang van vooral lokaal en regionaal waterbeheer naar een centraler georganiseerd waterstaatsapparaat (Meyer et al., 2014).</p><p>Institutioneel betekende dit dat veiligheidsopgaven steeds vaker via nationale systeemingrepen werden benaderd. Voor beleidsmakers is dit een cruciaal moment, omdat het de basis legde voor latere grootschalige projecten waarin bescherming, bereikbaarheid en ruimtelijke ordening in één bestuurlijke logica samenkwamen.</p>
 
-                    <a class="event-card" data-delta="rms" href="#evt-rms-1861" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#8bc2f0; color:#083d68;">1861-1904</span>
-                        <h3>Nieuwe waterwerken in de delta</h3>
-                        <p>Nieuwe Merwede, Nieuwe Waterweg en Bergsche Maas herordenen de stroming.</p>
-                        <span class="tag" style="color:var(--rms);">Rijn-Maas-Schelde</span>
-                    </a>
 
-                    <a class="event-card" data-delta="mekong" href="#evt-mekong-1880" style="margin-top:0;">
-                        <span class="event-year" style="background:#79d7c4; color:#064f40;">1880-1930</span>
-                        <h3>Koloniale irrigatie en rijstexpansie</h3>
-                        <p>Het areaal rijstland in de Mekong-delta groeit sterk door irrigatiewerken.</p>
-                        <span class="tag" style="color:var(--mekong);">Mekong-delta</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-mekong tone-2 stagger-top" data-delta="mekong" id="evt-mekong-17th">
+<div class="detail-meta">
+<span class="detail-year">17e-18e eeuw</span>
+<span class="detail-delta">Mekong-delta</span>
+</div>
+<h3>Zuidwaartse Vietnamese uitbreiding</h3><p>De zuidwaartse Vietnamese uitbreiding in de zeventiende en achttiende eeuw bracht nieuwe nederzettingen, ontginningen en kanalen naar de Mekong-delta. Daardoor werd de delta sterker opgenomen in staatsvorming, landbouwexpansie en territoriale consolidatie (Marchand et al., 2014).</p><p>Voor veiligheidsplanners laat deze fase zien dat risico en bestuur in delta’s vaak gelijktijdig uitbreiden. Naarmate meer gebied economisch wordt ontsloten, neemt ook de behoefte toe aan institutionele coördinatie van afwatering, transport en bescherming.</p>
 
-                    <a class="event-card" data-delta="nile" href="#evt-nile-1902" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#eeb048; color:#5b3200;">1902</span>
-                        <h3>Eerste Aswandam</h3>
-                        <p>De regeling van het Nijlwater verandert irrigatie en overstromingsritmes stroomafwaarts.</p>
-                        <span class="tag" style="color:var(--nile);">Nijl-delta</span>
-                    </a>
 
-                    <a class="event-card" data-delta="rms" href="#evt-rms-1916" style="margin-top:0;">
-                        <span class="event-year" style="background:#69b1e8; color:#08324f;">1916</span>
-                        <h3>Overstroming in Noord-Holland</h3>
-                        <p>De ramp versnelt het politieke draagvlak voor de Zuiderzeewerken.</p>
-                        <span class="tag" style="color:var(--rms);">Rijn-Maas-Schelde</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-rms tone-3 stagger-bottom" data-delta="rms" id="evt-rms-1861">
+<div class="detail-meta">
+<span class="detail-year">1861-1904</span>
+<span class="detail-delta">Rijn-Maas-Schelde-delta</span>
+</div>
+<h3>Nieuwe Merwede, Nieuwe Waterweg en Bergsche Maas</h3><p>Tussen 1861 en 1904 werden met de Nieuwe Merwede, de Nieuwe Waterweg en de Bergsche Maas ingrijpende herordening van het Nederlandse riviersysteem doorgevoerd. Deze projecten combineerden afvoerverbetering, scheepvaartbelang en overstromingsbeheersing in één ruimtelijke operatie (Meyer et al., 2014).</p><p>Beleidsmatig markeert deze periode de verschuiving naar integrale systeemsturing. Het veiligheidsregime werd minder afhankelijk van afzonderlijke dijken of lokale ingrepen en sterker gekoppeld aan de vormgeving van het riviernetwerk als geheel.</p>
 
-                    <a class="event-card" data-delta="rms" href="#evt-rms-1927" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#4f9ee0; color:#082f4a;">1927-1932</span>
-                        <h3>Bouw van de Afsluitdijk</h3>
-                        <p>De Zuiderzee verandert in het IJsselmeer en de kustlijn wordt sterk verkort.</p>
-                        <span class="tag" style="color:var(--rms);">Rijn-Maas-Schelde</span>
-                    </a>
 
-                    <a class="event-card" data-delta="rms" href="#evt-rms-1953" style="margin-top:0;">
-                        <span class="event-year" style="background:#3b8dd5; color:#07263e;">1953</span>
-                        <h3>Watersnoodramp</h3>
-                        <p>De ramp in Zuidwest-Nederland leidt direct tot de Deltawerken.</p>
-                        <span class="tag" style="color:var(--rms);">Rijn-Maas-Schelde</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-mekong tone-3 stagger-top" data-delta="mekong" id="evt-mekong-1880">
+<div class="detail-meta">
+<span class="detail-year">1880-1930</span>
+<span class="detail-delta">Mekong-delta</span>
+</div>
+<h3>Koloniale irrigatie en uitbreiding van rijstland</h3><p>Tussen circa 1880 en 1930 werden in de Mekong-delta onder koloniaal bestuur irrigatiewerken, kanalen en ontginningsprojecten versneld uitgebreid. Deze ingrepen vergrootten de rijstproductie, maar verbonden de delta ook nadrukkelijker aan externe economische en bestuurlijke belangen (Marchand et al., 2014).</p><p>Vanuit beleidsperspectief maakt deze fase duidelijk dat technische verbetering niet neutraal is. Waterinfrastructuur verhoogde de productiviteit, maar legde ook nieuwe afhankelijkheden vast in grondgebruik, afvoerregimes en bestuurlijke controle.</p>
 
-                    <a class="event-card" data-delta="mekong" href="#evt-mekong-1960" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#57cdb7; color:#05463a;">1960s</span>
-                        <h3>Eerste modernistische ontwikkelplannen</h3>
-                        <p>Flood control en technische beheersing worden centrale ideeën in de delta.</p>
-                        <span class="tag" style="color:var(--mekong);">Mekong-delta</span>
-                    </a>
 
-                    <a class="event-card" data-delta="nile" href="#evt-nile-1959" style="margin-top:0;">
-                        <span class="event-year" style="background:#e39b31; color:#4f2b00;">1959-1970</span>
-                        <h3>Bouw van de Aswan High Dam</h3>
-                        <p>De jaarlijkse overstroming komt steeds sterker onder menselijke controle te staan.</p>
-                        <span class="tag" style="color:var(--nile);">Nijl-delta</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-nile tone-4 stagger-bottom" data-delta="nile" id="evt-nile-1902">
+<div class="detail-meta">
+<span class="detail-year">1902</span>
+<span class="detail-delta">Nijl-delta</span>
+</div>
+<h3>Eerste Aswandam</h3><p>De eerste Aswandam uit 1902 markeerde een nieuwe fase in de regulering van het Nijlwater. Door opslag en gecontroleerde afvoer veranderde de relatie tussen seizoensoverstroming, irrigatie en sedimenttransport in de benedenstroomse delen van het systeem (Encyclopaedia Britannica, n.d.-b).</p><p>Voor veiligheids- en waterplanners is dit een klassiek voorbeeld van een ingreep die operationele controle vergroot, maar tegelijk natuurlijke processen verzwakt waarop een delta op lange termijn is gebouwd. De regulering bracht voordelen voor landbouw en planning, maar verkleinde ook de natuurlijke dynamiek van de delta.</p>
 
-                    <a class="event-card" data-delta="rms" href="#evt-rms-1954" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#2f7dc8; color:#f7fbff;">1954-1997</span>
-                        <h3>Deltawerken</h3>
-                        <p>Stormvloedkeringen, dammen en afsluitingen hertekenen de zuidwestelijke delta.</p>
-                        <span class="tag" style="color:var(--rms);">Rijn-Maas-Schelde</span>
-                    </a>
 
-                    <a class="event-card" data-delta="mekong" href="#evt-mekong-1986" style="margin-top:0;">
-                        <span class="event-year" style="background:#37bb9f; color:#04392f;">vanaf 1986</span>
-                        <h3>Đổi Mới en snelle verstedelijking</h3>
-                        <p>Economische hervormingen versnellen groei, infrastructuur en stadsuitbreiding.</p>
-                        <span class="tag" style="color:var(--mekong);">Mekong-delta</span>
-                    </a>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-rms tone-4 stagger-top" data-delta="rms" id="evt-rms-1916">
+<div class="detail-meta">
+<span class="detail-year">1916</span>
+<span class="detail-delta">Rijn-Maas-Schelde-delta</span>
+</div>
+<h3>Overstroming van 1916</h3><p>De overstroming van 1916 maakte zichtbaar dat het bestaande beschermingssysteem in de Zuiderzee en de Nederlandse delta tekortschiet onder extreme belasting. De gebeurtenis kreeg daardoor grote betekenis in de politieke legitimering van een meer ingrijpende nationale herinrichting (Meyer et al., 2014).</p><p>Voor beleidsmakers is dit relevant als voorbeeld van een focussing event: een ramp die niet alleen schade veroorzaakt, maar ook de bestuurlijke ruimte opent voor structurele systeemingrepen. Vanaf dit moment werd waterveiligheid nadrukkelijk gekoppeld aan de mogelijkheid om de delta op nationale schaal te herontwerpen.</p>
 
-                    <a class="event-card" data-delta="mekong" href="#evt-mekong-1990" style="margin-top:3.6rem;">
-                        <span class="event-year" style="background:#1aa98d; color:#f4fffc;">1990s</span>
-                        <h3>Grootschalige watercontrolesystemen</h3>
-                        <p>Hogere dijken en intensiever flood control veranderen het oude leven met het water.</p>
-                        <span class="tag" style="color:var(--mekong);">Mekong-delta</span>
-                    </a>
 
-                    <a class="event-card" data-delta="rms" href="#evt-rms-2005" style="margin-top:0;">
-                        <span class="event-year" style="background:#1669ad; color:#f4faff;">2005-2015</span>
-                        <h3>Ruimte voor de Rivier</h3>
-                        <p>De benadering verschuift van alleen keren naar ook ruimte geven aan water.</p>
-                        <span class="tag" style="color:var(--rms);">Rijn-Maas-Schelde</span>
-                    </a>
-                </div>
-            </div>
-        </section>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-rms tone-5 stagger-bottom" data-delta="rms" id="evt-rms-1927">
+<div class="detail-meta">
+<span class="detail-year">1927-1932</span>
+<span class="detail-delta">Rijn-Maas-Schelde-delta</span>
+</div>
+<h3>Bouw van de Afsluitdijk</h3><p>De bouw van de Afsluitdijk tussen 1927 en 1932 verkortte de kustlijn en transformeerde de open Zuiderzee tot het gecontroleerde IJsselmeer. Hiermee werd bescherming niet langer uitsluitend gezocht in lokale verdediging, maar in grootschalige herconfiguratie van het watersysteem (Meyer et al., 2014).</p><p>Dit project geldt beleidsmatig als een omslagpunt omdat het de afhankelijkheid van één grote infrastructurele ingreep vergrootte, maar tegelijk de bestuurlijke en hydraulische beheersbaarheid sterk verbeterde. De Afsluitdijk laat daarmee zien hoe veiligheid, landaanwinning en nationale planning in de Nederlandse delta samenkwamen.</p>
 
-        <section class="details-heading">
-            <h2>Uitgebreide toelichting</h2>
-        </section>
 
-        <section class="details-grid">
-            <article class="detail-block" data-delta="nile" id="evt-nile-5000" style="border-left-color:#d88c12;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#fde7b2; color:#764400;">ca. 5000 v.Chr.</span>
-                    <span class="detail-delta" style="background:#fff3d3; color:#8a5400;">Nijl-delta</span>
-                </div>
-                <h3>Vroege bewoning in de Nijl-delta</h3>
-                <p>De Nijl-delta ontstond doordat een prehistorische inham van de Middellandse Zee geleidelijk werd opgevuld met slib dat vooral uit de Ethiopische hooglanden werd aangevoerd. Daardoor ontstond een uitzonderlijk vruchtbaar landschap dat al vroeg geschikt was voor landbouw, bewoning en watergebonden vervoer.</p>
-                <p>Voor een historische tijdlijn is dit een goed beginpunt, omdat het laat zien dat de geschiedenis van de delta niet begint met een dam of een stad, maar met natuurlijke sedimentatie. Juist die combinatie van vruchtbare grond, overstromingen en bereikbaarheid maakte de delta later zo belangrijk voor de Egyptische beschaving.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-rms tone-6 stagger-top" data-delta="rms" id="evt-rms-1953">
+<div class="detail-meta">
+<span class="detail-year">1953</span>
+<span class="detail-delta">Rijn-Maas-Schelde-delta</span>
+</div>
+<h3>Watersnoodramp</h3><p>De watersnoodramp van 1953 leidde tot omvangrijke menselijke en materiële schade en bevestigde de kwetsbaarheid van de zuidwestelijke delta voor stormvloeden. In de Nederlandse beleidsgeschiedenis geldt deze gebeurtenis als het beslissende moment waarop een nieuw veiligheidsregime politiek onvermijdelijk werd (Meyer et al., 2014).</p><p>Voor veiligheidsplanners illustreert 1953 hoe een extreme gebeurtenis de normatieve basis van beleid kan verschuiven: van herstel naar preventie, van regionale verdediging naar nationaal systeemontwerp. De ramp werd daarmee niet alleen een tragedie, maar ook een institutioneel scharnierpunt.</p>
 
-            <article class="detail-block" data-delta="nile" id="evt-nile-3100" style="border-left-color:#cf830a;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#f9d27d; color:#6f3d00;">ca. 3100 v.Chr.</span>
-                    <span class="detail-delta" style="background:#fff0c8; color:#8a5400;">Nijl-delta</span>
-                </div>
-                <h3>Onder-Egypte in de eenwording van Egypte</h3>
-                <p>Rond de vorming van het oude Egypte werd de delta gezien als Onder-Egypte. Samen met Opper-Egypte in het zuiden vormde dit de ruimtelijke basis van de Egyptische staat. De delta was niet zomaar een moerasgebied aan zee, maar een dichtbevolkt en productief deel van het rijk.</p>
-                <p>In jouw website kun je dit gebruiken om te laten zien dat de delta al duizenden jaren een politiek kerngebied is. De geschiedenis van de Nijl-delta gaat dus niet alleen over waterbeheer, maar ook over staatsvorming, landbouwoverschotten en verbindingen met de Middellandse Zee.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
 
-            <article class="detail-block" data-delta="nile" id="evt-nile-331" style="border-left-color:#c77708;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#f4c05c; color:#613500;">331 v.Chr.</span>
-                    <span class="detail-delta" style="background:#ffe8b4; color:#8a5400;">Nijl-delta</span>
-                </div>
-                <h3>Stichting van Alexandrië</h3>
-                <p>Met de stichting van Alexandrië werd de westelijke rand van de Nijl-delta een van de belangrijkste schakels tussen Egypte en de mediterrane wereld. De delta kreeg hierdoor een nog sterkere rol in zeehandel, bestuur en kennisuitwisseling.</p>
-                <p>Voor je tijdlijn is dit een nuttig moment omdat het laat zien hoe de delta niet alleen agrarisch, maar ook maritiem en stedelijk functioneerde. In de eeuwen daarna bleef de delta een gebied waar havens, distributie en politieke macht samenkwamen.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-mekong tone-4 stagger-bottom" data-delta="mekong" id="evt-mekong-1960">
+<div class="detail-meta">
+<span class="detail-year">1960s</span>
+<span class="detail-delta">Mekong-delta</span>
+</div>
+<h3>Eerste moderne ontwikkelplannen voor de Mekong-delta</h3><p>Vanaf de jaren zestig werd de Mekong-delta in toenemende mate benaderd als een planbaar ontwikkelingsgebied, waarin hydrologie, landbouw en infrastructuur via moderne programma’s op elkaar moesten worden afgestemd. Deze verschuiving weerspiegelt de opkomst van technocratisch deltadenken in Zuidoost-Azië (Marchand et al., 2014).</p><p>Beleidsmatig is dit relevant omdat de delta vanaf dan minder wordt begrepen als een adaptief leeflandschap en meer als een systeem dat via modellering, infrastructuur en institutionele coördinatie geoptimaliseerd kan worden. Daarmee verandert ook de manier waarop risico’s worden gedefinieerd en bestuurd.</p>
 
-            <article class="detail-block" data-delta="rms" id="evt-rms-1250" style="border-left-color:#1f6fb2;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#cfe6fb; color:#0d4a7b;">1250-2000</span>
-                    <span class="detail-delta" style="background:#e8f3fd; color:#0d4a7b;">Rijn-Maas-Schelde-delta</span>
-                </div>
-                <h3>Groei van polders in de Nederlandse delta</h3>
-                <p>De zuidwestelijke Nederlandse delta veranderde over eeuwen door bedijking, inpoldering en het aanleggen van nieuwe eilanden en landbouwgronden. In het boek <em>Urbanized Deltas in Transition</em> wordt deze ontwikkeling expliciet weergegeven als een reeks polders die ontstonden tussen 1250 en 2000.</p>
-                <p>Dat is belangrijk voor jouw verhaal, omdat de geschiedenis van de Rijn-Maas-Schelde-delta niet alleen uit rampen bestaat. De delta is ook stap voor stap gemaakt landschap: telkens werd water begrensd, land gewonnen en het nederzettingspatroon aangepast aan de nieuwe verhouding tussen water en land.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
 
-            <article class="detail-block" data-delta="mekong" id="evt-mekong-1st" style="border-left-color:#158f77;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#ccefe8; color:#0a5e4d;">1e-6e eeuw</span>
-                    <span class="detail-delta" style="background:#e7faf5; color:#0a5e4d;">Mekong-delta</span>
-                </div>
-                <h3>Vroege handels- en kanaalnetwerken in de Mekong-delta</h3>
-                <p>In de vroege eeuwen van onze jaartelling ontwikkelden zich in en rond de Mekong-delta nederzettingen die via kanalen met elkaar verbonden waren. De delta functioneerde daardoor niet alleen als landbouwgebied, maar ook als handelslandschap waarin waterwegen de hoofdstructuur vormden.</p>
-                <p>Voor een tijdlijn helpt dit om duidelijk te maken dat de Mekong-delta al lang vóór moderne dijken en plannen een georganiseerd watersysteem kende. Het leven was er van oudsher aangepast aan overstromingen, seizoenswater en transport over water.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-nile tone-5 stagger-top" data-delta="nile" id="evt-nile-1959">
+<div class="detail-meta">
+<span class="detail-year">1959-1970</span>
+<span class="detail-delta">Nijl-delta</span>
+</div>
+<h3>Bouw van de Aswan High Dam</h3><p>De overeenkomst van 1959 en de daaropvolgende bouw van de Aswan High Dam tussen 1960 en 1970 vergrootten de Egyptische controle over afvoer, irrigatie en elektriciteitsproductie ingrijpend. Tegelijk werd de sedimenttoevoer naar de Nijl-delta verder beperkt, met gevolgen voor bodemdynamiek, kusterosie en verzilting (Swain, 2011; Encyclopaedia Britannica, n.d.-c).</p><p>Voor beleidsmakers is dit een kernvoorbeeld van een trade-off in deltabeheer: meer korte- en middellange termijncontrole kan samengaan met grotere langetermijnkwetsbaarheid. De dam verhoogde de bestuurlijke voorspelbaarheid van het systeem, maar verzwakte processen die essentieel zijn voor de morfologische stabiliteit van de delta.</p>
 
-            <article class="detail-block" data-delta="rms" id="evt-rms-1798" style="border-left-color:#1b68a7;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#acd5f9; color:#0b4574;">1798</span>
-                    <span class="detail-delta" style="background:#e8f3fd; color:#0d4a7b;">Rijn-Maas-Schelde-delta</span>
-                </div>
-                <h3>Oprichting van Rijkswaterstaat</h3>
-                <p>Met de oprichting van Rijkswaterstaat kreeg de nationale overheid een steeds grotere rol in de inrichting van rivieren, zeearmen en waterkeringen. In het boek wordt dit genoemd als een belangrijk moment in de overgang naar grootschalige, door de staat geleide waterprojecten.</p>
-                <p>Daardoor verschuift de delta van lokaal aangepast waterbeheer naar nationale systeemingrepen. Dat is een mooi kantelpunt in je verhaal: vanaf hier wordt de delta niet alleen bewoond, maar actief herontworpen op grote schaal.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
 
-            <article class="detail-block" data-delta="mekong" id="evt-mekong-17th" style="border-left-color:#12876f;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#9ae4d4; color:#075645;">17e-18e eeuw</span>
-                    <span class="detail-delta" style="background:#e7faf5; color:#0a5e4d;">Mekong-delta</span>
-                </div>
-                <h3>Zuidwaartse Vietnamese uitbreiding</h3>
-                <p>In deze periode werd de Mekong-delta intensiever opgenomen in het Vietnamese kerngebied. Nieuwe nederzettingen, ontginningen en kanalen maakten het mogelijk om steeds grotere delen van de delta voor landbouw en bewoning te gebruiken.</p>
-                <p>Dit moment laat goed zien dat delta’s ook politieke grensgebieden zijn. De geschiedenis van de Mekong-delta gaat niet alleen over fysische processen, maar ook over migratie, kolonisatie en de vraag wie het waterlandschap inricht en controleert.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-rms tone-7 stagger-bottom" data-delta="rms" id="evt-rms-1954">
+<div class="detail-meta">
+<span class="detail-year">1954-1997</span>
+<span class="detail-delta">Rijn-Maas-Schelde-delta</span>
+</div>
+<h3>Deltawerken</h3><p>De Deltawerken, uitgevoerd vanaf 1954, vormden het institutionele en infrastructurele antwoord op de watersnoodramp van 1953. In deze projecten werd veiligheid vertaald naar een samenhangend netwerk van dammen, keringen en afsluitingen dat de kans op overstroming systematisch moest verkleinen (Meyer et al., 2014).</p><p>Voor beleidsmakers tonen de Deltawerken de kracht én de beperking van grootschalige technische bescherming. Het systeem bood een hoog veiligheidsniveau, maar vergrootte ook de afhankelijkheid van kapitaalintensief beheer, kennisinstituties en periodieke aanpassing aan veranderende risico’s.</p>
 
-            <article class="detail-block" data-delta="rms" id="evt-rms-1861" style="border-left-color:#175e97;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#8bc2f0; color:#083d68;">1861-1904</span>
-                    <span class="detail-delta" style="background:#e8f3fd; color:#0d4a7b;">Rijn-Maas-Schelde-delta</span>
-                </div>
-                <h3>Nieuwe Merwede, Nieuwe Waterweg en Bergsche Maas</h3>
-                <p>In de negentiende en vroege twintigste eeuw werd het riviersysteem van de delta ingrijpend herordend. In het boek worden onder andere de Nieuwe Merwede (1861-1874), de Nieuwe Waterweg (1866-1872) en de Bergsche Maas (1888-1904) genoemd.</p>
-                <p>Deze projecten verbeterden afvoer en bereikbaarheid, vooral voor Rotterdam, maar maakten de delta ook kunstmatiger en sterker gefixeerd. Voor je tijdlijn is dit een uitstekend voorbeeld van de overgang van natuurlijke delta naar een technische, bestuurde delta.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
 
-            <article class="detail-block" data-delta="mekong" id="evt-mekong-1880" style="border-left-color:#107f69;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#79d7c4; color:#064f40;">1880-1930</span>
-                    <span class="detail-delta" style="background:#e7faf5; color:#0a5e4d;">Mekong-delta</span>
-                </div>
-                <h3>Koloniale irrigatie en uitbreiding van rijstland</h3>
-                <p>Tijdens de Franse koloniale periode werden irrigatiewerken en waterstaatkundige ingrepen gebruikt om de rijstproductie sterk te vergroten. Volgens Britannica verviervoudigde het areaal dat voor rijstbouw werd gebruikt in de Mekong-delta tussen 1880 en 1930.</p>
-                <p>Dit is een krachtig tijdlijnmoment, omdat je hier laat zien hoe een delta als productielandschap wordt opgeschaald. Waterbeheer werd niet alleen ingezet voor bescherming, maar ook om landbouw en export te intensiveren.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-mekong tone-5 stagger-top" data-delta="mekong" id="evt-mekong-1986">
+<div class="detail-meta">
+<span class="detail-year">vanaf 1986</span>
+<span class="detail-delta">Mekong-delta</span>
+</div>
+<h3>Đổi Mới en versnelde verstedelijking</h3><p>Met Đổi Mới verschoof de Vietnamese economie vanaf 1986 naar marktgerichte hervormingen, wat in de Mekong-delta leidde tot versnelde landbouwintensivering, verstedelijking en infrastructurele uitbreiding. Hierdoor nam de druk op water, ruimte en bestuurlijke coördinatie merkbaar toe (Marchand et al., 2014).</p><p>Voor veiligheidsplanners is dit een relevant omslagpunt omdat economische liberalisering ook nieuwe risicoprofielen creëert. De combinatie van hogere productie, snellere ruimtelijke ontwikkeling en grotere externe afhankelijkheden maakt het deltasysteem productiever, maar vaak ook gevoeliger voor systeemstoringen.</p>
 
-            <article class="detail-block" data-delta="nile" id="evt-nile-1902" style="border-left-color:#bb6d08;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#eeb048; color:#5b3200;">1902</span>
-                    <span class="detail-delta" style="background:#fff0c8; color:#8a5400;">Nijl-delta</span>
-                </div>
-                <h3>Eerste Aswandam</h3>
-                <p>De eerste dam bij Aswan werd tussen 1899 en 1902 gebouwd. Daarmee begon een nieuwe fase waarin de jaarlijkse stroom en overstroming van de Nijl steeds sterker technisch werden gereguleerd.</p>
-                <p>Ook al ligt de dam ver stroomopwaarts van de delta, de gevolgen zijn direct relevant voor jouw themapagina. Minder vrije overstroming betekent namelijk ook een andere aanvoer van water en sediment naar de delta, en dus een andere relatie tussen natuur, landbouw en bewoning.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
 
-            <article class="detail-block" data-delta="rms" id="evt-rms-1916" style="border-left-color:#14588b;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#69b1e8; color:#08324f;">1916</span>
-                    <span class="detail-delta" style="background:#e8f3fd; color:#0d4a7b;">Rijn-Maas-Schelde-delta</span>
-                </div>
-                <h3>Overstroming van 1916</h3>
-                <p>De overstroming in het noorden van Holland in 1916 vormde een directe aanleiding voor grote nationale waterbouwkundige werken. In het boek wordt deze ramp samen met 1953 genoemd als reden voor respectievelijk de Zuiderzeewerken en de Deltawerken.</p>
-                <p>Voor jouw pagina werkt dit goed als aanloop naar de Afsluitdijk. Het laat zien hoe een ramp niet alleen verwoesting brengt, maar ook een politieke omslag veroorzaakt in de manier waarop Nederland de delta wil beheersen.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-mekong tone-6 stagger-bottom" data-delta="mekong" id="evt-mekong-1990">
+<div class="detail-meta">
+<span class="detail-year">1990s</span>
+<span class="detail-delta">Mekong-delta</span>
+</div>
+<h3>Grootschalige watercontrolesystemen</h3><p>Vanaf de jaren negentig werden in de Mekong-delta op grote schaal sluizen, dijken en andere watercontrolesystemen aangelegd om landbouwproductie te stabiliseren en ruimtelijke ontwikkeling te ondersteunen. Deze infrastructuur versterkte de bestuurlijke capaciteit om water te sturen, maar wijzigde ook lokale inundatiepatronen en sedimentdynamiek (Marchand et al., 2014).</p><p>Beleidsmatig laat dit zien dat technische beheersing vaak gepaard gaat met het inruilen van adaptieve flexibiliteit voor gereguleerde zekerheid. Dat kan op korte termijn efficiënt zijn, maar vermindert soms het vermogen van de delta om schokken ecologisch en sociaal op te vangen.</p>
 
-            <article class="detail-block" data-delta="rms" id="evt-rms-1927" style="border-left-color:#104e7c;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#4f9ee0; color:#082f4a;">1927-1932</span>
-                    <span class="detail-delta" style="background:#e8f3fd; color:#0d4a7b;">Rijn-Maas-Schelde-delta</span>
-                </div>
-                <h3>Bouw van de Afsluitdijk</h3>
-                <p>Met de bouw van de Afsluitdijk werd de Zuiderzee afgesloten en omgevormd tot het IJsselmeer. In het boek staat dat hierdoor de kustlijn sterk werd verkort en dat nieuwe IJsselmeerpolders konden ontstaan als model voor moderne landbouw en ruimtelijke planning.</p>
-                <p>Dit is een sleutelmoment voor je tijdlijn, omdat hier letterlijk een nieuwe delta-orde wordt gemaakt. De ingreep veranderde niet alleen het watersysteem, maar ook de ruimtelijke inrichting van dorpen, polders, infrastructuur en landbouw.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
 
-            <article class="detail-block" data-delta="rms" id="evt-rms-1953" style="border-left-color:#0d456b;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#3b8dd5; color:#07263e;">1953</span>
-                    <span class="detail-delta" style="background:#e8f3fd; color:#0d4a7b;">Rijn-Maas-Schelde-delta</span>
-                </div>
-                <h3>Watersnoodramp</h3>
-                <p>De Watersnoodramp van 1953 maakte pijnlijk duidelijk hoe kwetsbaar de zuidwestelijke delta was. Grote delen van Zeeland, Zuid-Holland en West-Brabant overstroomden, met enorme menselijke en materiële schade tot gevolg.</p>
-                <p>In jouw tijdlijn vormt dit het logische scharnierpunt tussen ramp en reactie. De ramp werd de directe aanleiding voor de Deltawerken, waarmee de Nederlandse staat opnieuw koos voor grootschalige technische herinrichting van de delta.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+<article class="detail-block delta-rms tone-8 stagger-top" data-delta="rms" id="evt-rms-2005">
+<div class="detail-meta">
+<span class="detail-year">2005-2015</span>
+<span class="detail-delta">Rijn-Maas-Schelde-delta</span>
+</div>
+<h3>Ruimte voor de Rivier</h3><p>Met Ruimte voor de Rivier verschoof het Nederlandse veiligheidsbeleid vanaf de jaren 2000 van uitsluitend verdedigen naar het combineren van bescherming en rivierkundige verruiming. Door dijkverlegging, nevengeulen en ruimtelijke reservering werd veiligheid gekoppeld aan herstel van afvoercapaciteit en landschappelijke kwaliteit (Rijkswaterstaat, 2023).</p><p>Dit programma is voor beleidsmakers relevant omdat het een ander veiligheidsparadigma zichtbaar maakt: niet alleen afsluiten en fixeren, maar ook gecontroleerd ruimte geven aan water. Daarmee werd adaptatie explicieter onderdeel van de bestuurlijke logica van deltabeheer.</p>
 
-            <article class="detail-block" data-delta="mekong" id="evt-mekong-1960" style="border-left-color:#0d765f;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#57cdb7; color:#05463a;">1960s</span>
-                    <span class="detail-delta" style="background:#e7faf5; color:#0a5e4d;">Mekong-delta</span>
-                </div>
-                <h3>Eerste moderne ontwikkelplannen voor de Mekong-delta</h3>
-                <p>In het TU Delft-boek wordt uitgelegd dat de moderne, gecentraliseerde flood-control-benadering in de Mekong-delta is terug te voeren op het eerste Mekong Delta Development Plan uit de jaren 1960. Vanaf dan komt technische beheersing centraal te staan in het denken over de delta.</p>
-                <p>Dit is een belangrijk omslagmoment in jouw vergelijking. Waar oudere strategieën probeerden te leven met overstromingen, begint hier een fase waarin het water steeds meer als probleem wordt gezien dat moet worden gecontroleerd.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
 
-            <article class="detail-block" data-delta="nile" id="evt-nile-1959" style="border-left-color:#a45e06;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#e39b31; color:#4f2b00;">1959-1970</span>
-                    <span class="detail-delta" style="background:#fff0c8; color:#8a5400;">Nijl-delta</span>
-                </div>
-                <h3>Bouw van de Aswan High Dam</h3>
-                <p>De Aswan High Dam werd tussen 1959 en 1970 gebouwd en maakte het mogelijk om de jaarlijkse Nijl-overstroming op ongekende schaal te reguleren. Daarmee veranderde ook de werking van de delta, omdat water en sediment niet langer op dezelfde manier stroomafwaarts kwamen.</p>
-                <p>Voor jouw themapagina is dit een sterk modern contrast met de oudere geschiedenis van de Nijl-delta. Eeuwenlang was de overstroming de basis van vruchtbaarheid; in de twintigste eeuw wordt die cyclus steeds meer vervangen door technische controle, irrigatie en permanente regulering.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
-
-            <article class="detail-block" data-delta="rms" id="evt-rms-1954" style="border-left-color:#0a3b5c;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#2f7dc8; color:#f7fbff;">1954-1997</span>
-                    <span class="detail-delta" style="background:#e8f3fd; color:#0d4a7b;">Rijn-Maas-Schelde-delta</span>
-                </div>
-                <h3>Deltawerken</h3>
-                <p>Na 1953 werden dammen, keringen en afsluitingen gebouwd die de zuidwestelijke delta ingrijpend veranderden. In het boek wordt beschreven dat de Delta works van de regio een meer geïntegreerd en economisch krachtiger gebied maakten, met nieuwe zoetwaterbekkens, industrie en recreatie.</p>
-                <p>Dit tijdlijnblok laat goed zien dat veiligheid, economie en ruimtelijke planning in een delta vaak samengaan. De Deltawerken waren niet alleen een antwoord op gevaar, maar ook een project dat de hele delta opnieuw structureerde.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
-
-            <article class="detail-block" data-delta="mekong" id="evt-mekong-1986" style="border-left-color:#096851;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#37bb9f; color:#04392f;">vanaf 1986</span>
-                    <span class="detail-delta" style="background:#e7faf5; color:#0a5e4d;">Mekong-delta</span>
-                </div>
-                <h3>Đổi Mới en versnelde verstedelijking</h3>
-                <p>Na de economische hervormingen van het midden van de jaren tachtig groeiden steden en infrastructuur in de Mekong-delta snel. In het boek wordt Can Tho als voorbeeld genoemd: de bevolking groeide sterk en de stedelijke oppervlakte verdubbelde in ongeveer twintig jaar.</p>
-                <p>Voor jouw vergelijking is dit een belangrijk recent hoofdstuk. Het laat zien dat deltarisico’s niet alleen voortkomen uit natuur of water, maar ook uit snelle verstedelijking op laaggelegen gronden die juist gevoelig zijn voor overstroming en bodemdaling.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
-
-            <article class="detail-block" data-delta="mekong" id="evt-mekong-1990" style="border-left-color:#055640;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#1aa98d; color:#f4fffc;">1990s</span>
-                    <span class="detail-delta" style="background:#e7faf5; color:#0a5e4d;">Mekong-delta</span>
-                </div>
-                <h3>Grootschalige watercontrolesystemen</h3>
-                <p>Volgens het TU Delft-boek materialiseerde de meer gecentraliseerde flood-control-aanpak vooral in de jaren 1990, toen grootschalige watercontrolesystemen werden aangelegd. Hogere dijken en zwaardere sturing van water moesten landbouwproductie en veiligheid vergroten.</p>
-                <p>Tegelijk noemt het boek dit een tipping point: de oude strategie van leven met de overstroming kwam onder druk te staan. Daarmee krijgt je tijdlijn ook een kritisch element, omdat technische ingrepen nieuwe spanningen kunnen oproepen tussen ecologie, landbouw en stedelijke groei.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
-
-            <article class="detail-block" data-delta="rms" id="evt-rms-2005" style="border-left-color:#084163;">
-                <div class="detail-meta">
-                    <span class="detail-year" style="background:#1669ad; color:#f4faff;">2005-2015</span>
-                    <span class="detail-delta" style="background:#e8f3fd; color:#0d4a7b;">Rijn-Maas-Schelde-delta</span>
-                </div>
-                <h3>Ruimte voor de Rivier</h3>
-                <p>In de eenentwintigste eeuw verschuift in Nederland het denken opnieuw. In plaats van water alleen buiten te sluiten, wordt in programma’s als <em>Ruimte voor de Rivier</em> geprobeerd om rivieren juist weer meer ruimte te geven en die ingrepen te combineren met ruimtelijke kwaliteit.</p>
-                <p>Dit is een sterk slot voor de Rijn-Maas-Schelde-lijn. Je laat ermee zien dat de geschiedenis van een delta niet stopt bij dijken en stormvloedkeringen, maar doorgaat in nieuwe ideeën over adaptatie, landschap en leven met water.</p>
-                <a class="back-link" href="#top">Terug naar boven ↑</a>
-            </article>
-        </section>
-
-        <section class="sources-box">
-            <h2>Gebruikte bronnen</h2>
-            <ul>
-                <li><strong>Rhine-Meuse-Scheldt Delta / Mekong Delta:</strong> Han Meyer &amp; Steffen Nijhuis (eds.), <em>Urbanized Deltas in Transition</em>, TU Delft / University of Houston. Deze bron is gebruikt voor de Nederlandse en Mekong-gerelateerde gebeurtenissen.</li>
-                <li><strong>Nijl-delta:</strong> Encyclopaedia Britannica, <em>Nile River – Physiography</em>.</li>
-                <li><strong>Nijl-delta:</strong> Encyclopaedia Britannica, <em>Aswan High Dam</em> en <em>Aswān Dam</em>.</li>
-                <li><strong>Mekong aanvullende context:</strong> Encyclopaedia Britannica, <em>History of Vietnam</em> en gerelateerde artikelen over irrigatie en koloniale ontwikkeling.</li>
-            </ul>
-        </section>
-        
-        <section class="sources-box apa-box" aria-labelledby="bron-title">
-            <h2 id="bron-title">Bronvermelding (APA 7)</h2>
-            <ul class="apa-list">
-                <li>Meyer, V. J., Nijhuis, S., &amp; Broesi, R. (2014). <em>Rhine-Meuse-Scheldt Delta, Netherlands</em>. In V. J. Meyer &amp; S. Nijhuis (Eds.), <em>Urbanized Deltas in transition</em> (pp. 41–50). Techne Press.</li>
-                <li>Marchand, M., Pham, D. Q., &amp; Le, T. (2014). <em>Mekong Delta, Vietnam</em>. In V. J. Meyer &amp; S. Nijhuis (Eds.), <em>Urbanized Deltas in transition</em> (pp. 51–58). Techne Press.</li>
-                <li>Meyer, H., &amp; Nijhuis, S. (Eds.). (2014). <em>Urbanized Deltas in transition</em>. Techne Press.</li>
-                <li>Encyclopaedia Britannica. (n.d.). <em>Nile River: Physiography</em>.</li>
-            </ul>
-        </section>
-
-    </div>
+<a class="back-link" href="#top">Terug naar boven ↑</a>
+</article>
+</section>
+<section class="sources-box"><h2>Bronvermelding (APA 7)</h2><ul class="apa-list"><li>Meyer, V. J., Nijhuis, S., &amp; Broesi, R. (2014). Rhine-Meuse-Scheldt delta, Netherlands. In H. Meyer &amp; S. Nijhuis (Eds.), Urbanized deltas in transition (pp. 41–50). Techne Press.</li><li>Marchand, M., Pham, D. Q., &amp; Le, T. (2014). Mekong delta, Vietnam. In H. Meyer &amp; S. Nijhuis (Eds.), Urbanized deltas in transition (pp. 51–58). Techne Press.</li><li>Rijkswaterstaat. (2023). Ruimte voor de Rivier. Ministerie van Infrastructuur en Waterstaat.</li><li>Swain, A. (2011). Challenges for water sharing in the Nile Basin: Changing geo-politics and changing climate. Hydrological Sciences Journal, 56(4), 687–702.</li><li>Encyclopaedia Britannica. (n.d.-a). Nile River: Physiography.</li><li>Encyclopaedia Britannica. (n.d.-b). Aswan Dam.</li><li>Encyclopaedia Britannica. (n.d.-c). Aswan High Dam.</li></ul></section>
+</div>
 </main>
-
 <footer>
     © 2026 DRIP · <a href="contact.html">Contact</a>
 </footer>
-
-<script src="../js/timeline-filter.js"></script>
+<script src="../js/script.js"></script>
 <script>
     document.querySelectorAll('.event-card').forEach(card => {
         card.addEventListener('click', () => {
