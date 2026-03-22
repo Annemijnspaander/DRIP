@@ -230,9 +230,32 @@ a {
 }
  
 .hp-card:hover {
-  border-color: #4389f3;
+  border-color: #cce4ff;
+}
+
+.hp-cardM {
+  background: #e4ecf8;
+  border:4px solid var(--blue);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s;
 }
  
+.hp-cardM:hover {
+  border-color: #c8f0e0;
+}
+
+.hp-cardN {
+  background: #e4ecf8;
+  border:4px solid var(--blue);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+ 
+.hp-cardN:hover {
+  border-color: #ffe0cc;
+}
 /* ── Card preview row ── */
 .hp-card-preview {
   display: grid;
@@ -251,7 +274,29 @@ a {
   font-weight: 500;
   padding: 3px 10px;
   border-radius: 20px;
-  background: #e8eaf3;
+  background: #cce4ff;
+  color: #2e3d6b;
+  margin-bottom: 0.6rem;
+}
+
+.hp-badgeM {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #c8f0e0;
+  color: #2e3d6b;
+  margin-bottom: 0.6rem;
+}
+
+.hp-badgeN {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #ffe0cc;
   color: #2e3d6b;
   margin-bottom: 0.6rem;
 }
@@ -297,7 +342,9 @@ a {
   transition: transform 0.3s;
 }
  
-.hp-card.open .hp-lees-meer .arrow {
+.hp-card.open .hp-lees-meer .arrow,
+.hp-cardM.open .hp-lees-meer .arrow,
+.hp-cardN.open .hp-lees-meer .arrow {
   transform: rotate(90deg);
 }
  
@@ -305,6 +352,8 @@ a {
 .hp-card-img {
   position: relative;
   overflow: hidden;
+  height: 275;
+  
 }
  
 .hp-card-img svg {
@@ -333,7 +382,9 @@ a {
   border-top: 0.5px solid transparent;
 }
  
-.hp-card.open .hp-article {
+.hp-card.open .hp-article,
+.hp-cardM.open .hp-article,
+.hp-cardN.open .hp-article {
   max-height: 1000px;
   border-top-color: rgba(0, 0, 0, 0.1);
 }
